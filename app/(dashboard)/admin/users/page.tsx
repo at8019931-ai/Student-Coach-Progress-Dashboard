@@ -1,105 +1,99 @@
-import { redirect } from 'next/navigation'
-import { createClient } from '@/lib/supabase/server'
-import { cn, levelColor, levelLabel, formatDate } from '@/lib/utils'
+import { cn } from '@/lib/utils'
+import { fetchCoachStudentData, groupByCoach, fetchAllStudentProgress, deduplicateStudents, detectLevel } from '@/lib/cc-explorer'
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = { title: 'User Management — Admin' }
+export const metadata: Metadata = { title: 'Users — Admin' }
 export const dynamic = 'force-dynamic'
 
-export default async function UsersPage() {
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
-  if (!user) redirect('/login')
-  if (user.user_metadata?.role !== 'admin' && process.env.NODE_ENV !== 'development') redirect('/student')
+const LEVEL_COLORS: Record<string, string> = {
+  'Foundation 1': 'bg-sky-100 text-sky-700',
+  'Foundation 2': 'bg-blue-100 text-blue-700',
+  'Foundation 3': 'bg-indigo-100 text-indigo-700',
+  'Foundation 4': 'bg-violet-100 text-violet-700',
+  'Beginner':     'bg-emerald-100 text-emerald-700',
+  'Intermediate': 'bg-amber-100 text-amber-700',
+  'Advanced':     'bg-rose-100 text-rose-700',
+  'Other':        'bg-gray-100 text-gray-500',
+}
 
-  const [
-    { data: students },
-    { data: coaches },
-  ] = await Promise.all([
-    supabase.from('students')
-      .select('*, profile:profiles!students_user_id_fkey(full_name, email, avatar_url), coach:coaches(*, profile:profiles!coaches_user_id_fkey(full_name))')
-      .order('created_at', { ascending: false }),
-    supabase.from('coaches')
-      .select('*, profile:profiles!coaches_user_id_fkey(full_name, email)')
-      .order('created_at', { ascending: false }),
+export default async function UsersPage() {
+  const [rawStudents, coachData] = await Promise.all([
+    fetchAllStudentProgress().catch(() => []),
+    fetchCoachStudentData().catch(() => []),
   ])
+
+  const students = deduplicateStudents(rawStudents)
+  const coaches = groupByCoach(coachData)
 
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-gray-900">User Management</h1>
+        <h1 className="text-2xl font-bold text-gray-900">Users</h1>
         <p className="text-sm text-gray-500 mt-0.5">
-          {students?.length ?? 0} students · {coaches?.length ?? 0} coaches
+          {students.length} students · {coaches.length} coaches · live from CircleChess
         </p>
       </div>
 
       {/* Coaches */}
       <section>
-        <h2 className="text-lg font-bold text-gray-800 mb-3">Coaches</h2>
+        <h2 className="text-lg font-bold text-gray-800 mb-3">Coaches ({coaches.length})</h2>
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
           <div className="grid grid-cols-3 gap-4 px-6 py-3 bg-gray-50 border-b border-gray-100 text-xs font-semibold text-gray-500 uppercase">
             <div className="col-span-2">Name</div>
-            <div>Specialization</div>
+            <div className="text-right">Students · Batches</div>
           </div>
           <div className="divide-y divide-gray-50">
-            {coaches?.map(c => (
-              <div key={c.id} className="grid grid-cols-3 gap-4 px-6 py-4 items-center">
+            {coaches.map(c => (
+              <div key={c.coach_name} className="grid grid-cols-3 gap-4 px-6 py-3 items-center">
                 <div className="col-span-2 flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center text-sm font-bold text-blue-600">
-                    {(c as any).profile?.full_name?.charAt(0)}
+                  <div className="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center text-sm font-bold text-blue-600 shrink-0">
+                    {c.coach_name.charAt(0).toUpperCase()}
                   </div>
-                  <div>
-                    <p className="font-medium text-gray-900">{(c as any).profile?.full_name}</p>
-                    <p className="text-xs text-gray-400">{(c as any).profile?.email}</p>
-                  </div>
+                  <p className="font-medium text-gray-900">{c.coach_name}</p>
                 </div>
-                <p className="text-sm text-gray-600">{c.specialization ?? '—'}</p>
+                <div className="text-right">
+                  <span className="text-sm font-semibold text-blue-600">{c.student_count}</span>
+                  <span className="text-gray-400 text-xs mx-1">·</span>
+                  <span className="text-sm text-gray-500">{c.batch_count} batches</span>
+                </div>
               </div>
             ))}
-            {!coaches?.length && (
-              <p className="px-6 py-8 text-center text-sm text-gray-400">No coaches yet</p>
-            )}
           </div>
         </div>
       </section>
 
       {/* Students */}
       <section>
-        <h2 className="text-lg font-bold text-gray-800 mb-3">Students</h2>
+        <h2 className="text-lg font-bold text-gray-800 mb-3">Students ({students.length})</h2>
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
           <div className="grid grid-cols-5 gap-4 px-6 py-3 bg-gray-50 border-b border-gray-100 text-xs font-semibold text-gray-500 uppercase">
             <div className="col-span-2">Student</div>
             <div>Level</div>
-            <div>Coach</div>
-            <div>Rating</div>
+            <div className="text-right">Rating</div>
+            <div className="text-right">Total Pts</div>
           </div>
           <div className="divide-y divide-gray-50">
-            {students?.map(s => (
-              <div key={s.id} className="grid grid-cols-5 gap-4 px-6 py-4 items-center">
-                <div className="col-span-2 flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center text-sm font-bold text-primary shrink-0">
-                    {(s as any).profile?.full_name?.charAt(0) ?? 'S'}
+            {students.map(s => {
+              const level = detectLevel(s.league_name)
+              return (
+                <div key={s.player_id} className="grid grid-cols-5 gap-4 px-6 py-3 items-center">
+                  <div className="col-span-2 flex items-center gap-3 min-w-0">
+                    <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center text-sm font-bold text-primary shrink-0">
+                      {s.student_name.charAt(0)}
+                    </div>
+                    <div className="min-w-0">
+                      <p className="font-medium text-gray-900 truncate">{s.student_name}</p>
+                      <p className="text-xs text-gray-400">#{s.player_id}</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-medium text-gray-900">{(s as any).profile?.full_name}</p>
-                    <p className="text-xs text-gray-400">{(s as any).profile?.email}</p>
-                  </div>
+                  <span className={cn('px-2 py-0.5 rounded-full text-xs font-semibold w-fit', LEVEL_COLORS[level])}>
+                    {level.replace('Foundation', 'F')}
+                  </span>
+                  <p className="text-right font-bold text-amber-500">{s.rating ?? '—'}</p>
+                  <p className="text-right text-sm text-gray-700">{Number(s.total_points).toFixed(0)}</p>
                 </div>
-                <span className={cn('px-2.5 py-0.5 rounded-full text-xs font-semibold w-fit', levelColor(s.level))}>
-                  {levelLabel(s.level)}
-                </span>
-                <p className="text-sm text-gray-600">
-                  {(s as any).coach?.profile?.full_name ?? '—'}
-                </p>
-                <div>
-                  <p className="font-bold text-gray-900">{s.current_rating}</p>
-                  <p className="text-xs text-green-600">+{s.current_rating - s.joining_rating}</p>
-                </div>
-              </div>
-            ))}
-            {!students?.length && (
-              <p className="px-6 py-8 text-center text-sm text-gray-400">No students yet</p>
-            )}
+              )
+            })}
           </div>
         </div>
       </section>

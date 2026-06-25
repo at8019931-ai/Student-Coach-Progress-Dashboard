@@ -1,69 +1,67 @@
-import { redirect } from 'next/navigation'
-import { createClient } from '@/lib/supabase/server'
-import { cn, formatDateTime } from '@/lib/utils'
+import { cn } from '@/lib/utils'
+import { fetchCoachStudentData, groupByCoach, detectLevel } from '@/lib/cc-explorer'
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = { title: 'Classes — Admin' }
+export const metadata: Metadata = { title: 'Batches — Admin' }
 export const dynamic = 'force-dynamic'
 
-const statusColor: Record<string, string> = {
-  scheduled: 'bg-blue-50 text-blue-700',
-  completed: 'bg-green-50 text-green-700',
-  cancelled: 'bg-red-50 text-red-600',
-}
-
-const typeLabel: Record<string, string> = {
-  group: 'Group',
-  individual: 'Private',
-  tournament: 'Tournament',
+const LEVEL_COLORS: Record<string, string> = {
+  'Foundation 1': 'bg-sky-100 text-sky-700',
+  'Foundation 2': 'bg-blue-100 text-blue-700',
+  'Foundation 3': 'bg-indigo-100 text-indigo-700',
+  'Foundation 4': 'bg-violet-100 text-violet-700',
+  'Beginner':     'bg-emerald-100 text-emerald-700',
+  'Intermediate': 'bg-amber-100 text-amber-700',
+  'Advanced':     'bg-rose-100 text-rose-700',
+  'Other':        'bg-gray-100 text-gray-500',
 }
 
 export default async function ClassesPage() {
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
-  if (!user) redirect('/login')
-  if (user.user_metadata?.role !== 'admin' && process.env.NODE_ENV !== 'development') redirect('/student')
+  const coachData = await fetchCoachStudentData().catch(() => [])
+  const coaches = groupByCoach(coachData)
 
-  const { data: classes } = await supabase
-    .from('classes')
-    .select('*, coach:coaches(*, profile:profiles!coaches_user_id_fkey(full_name))')
-    .order('scheduled_at', { ascending: false })
-    .limit(50)
+  // Flatten all batches with coach info
+  const allBatches = coaches.flatMap(c =>
+    c.batches.map(b => ({ ...b, coach_name: c.coach_name, level: detectLevel(b.batch_name) }))
+  ).sort((a, b) => b.student_count - a.student_count)
 
-  const scheduled = classes?.filter(c => c.status === 'scheduled').length ?? 0
-  const completed = classes?.filter(c => c.status === 'completed').length ?? 0
+  const totalBatches = allBatches.length
+  const totalStudents = new Set(coachData.map(r => r.student_name.trim().toLowerCase())).size
 
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-gray-900">Classes</h1>
-        <p className="text-sm text-gray-500 mt-0.5">{scheduled} upcoming · {completed} completed</p>
+        <h1 className="text-2xl font-bold text-gray-900">Batches</h1>
+        <p className="text-sm text-gray-500 mt-0.5">{totalBatches} batches · {totalStudents} students · live from CircleChess</p>
       </div>
 
       <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
-        <div className="grid grid-cols-5 gap-4 px-6 py-3 bg-gray-50 border-b border-gray-100 text-xs font-semibold text-gray-500 uppercase">
-          <div className="col-span-2">Class</div>
+        <div className="grid grid-cols-4 gap-4 px-6 py-3 bg-gray-50 border-b border-gray-100 text-xs font-semibold text-gray-500 uppercase">
+          <div className="col-span-2">Batch</div>
           <div>Coach</div>
-          <div>Type</div>
-          <div>Status</div>
+          <div className="text-right">Students</div>
         </div>
 
         <div className="divide-y divide-gray-50">
-          {classes?.map(cls => (
-            <div key={cls.id} className="grid grid-cols-5 gap-4 px-6 py-4 items-center">
-              <div className="col-span-2">
-                <p className="font-medium text-gray-900">{cls.title}</p>
-                <p className="text-xs text-gray-400">{formatDateTime(cls.scheduled_at)} · {cls.duration_mins} min</p>
+          {allBatches.map(b => (
+            <div key={`${b.coach_name}-${b.batch_name}`} className="grid grid-cols-4 gap-4 px-6 py-3 items-center">
+              <div className="col-span-2 flex items-center gap-3">
+                <span className={cn('text-[10px] font-semibold px-1.5 py-0.5 rounded-full shrink-0', LEVEL_COLORS[b.level])}>
+                  {b.level.replace('Foundation', 'F')}
+                </span>
+                <p className="text-sm font-medium text-gray-900">{b.batch_name}</p>
               </div>
-              <p className="text-sm text-gray-600">{(cls as any).coach?.profile?.full_name ?? '—'}</p>
-              <span className="text-xs font-medium text-gray-600">{typeLabel[cls.class_type] ?? cls.class_type}</span>
-              <span className={cn('text-xs font-semibold px-2.5 py-0.5 rounded-full w-fit', statusColor[cls.status])}>
-                {cls.status}
-              </span>
+              <div className="flex items-center gap-2">
+                <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-xs font-bold text-blue-600 shrink-0">
+                  {b.coach_name.charAt(0).toUpperCase()}
+                </div>
+                <p className="text-sm text-gray-600 truncate">{b.coach_name}</p>
+              </div>
+              <p className="text-right text-sm font-semibold text-gray-700">{b.student_count}</p>
             </div>
           ))}
-          {!classes?.length && (
-            <p className="px-6 py-12 text-center text-sm text-gray-400">No classes scheduled yet</p>
+          {!allBatches.length && (
+            <p className="px-6 py-12 text-center text-sm text-gray-400">No batch data available</p>
           )}
         </div>
       </div>
