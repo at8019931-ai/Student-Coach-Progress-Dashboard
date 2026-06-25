@@ -1,15 +1,14 @@
 import { NextResponse, type NextRequest } from 'next/server'
-import crypto from 'crypto'
 
-function expectedToken() {
+function sessionToken() {
   const pass = process.env.APP_PASSWORD ?? 'admin1234'
-  return crypto.createHash('sha256').update(pass + 'cc_session_v1').digest('hex')
+  return Buffer.from(pass + ':cc_session_v1').toString('base64')
 }
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
   const session = request.cookies.get('cc_session')?.value
-  const authenticated = session === expectedToken()
+  const authenticated = session === sessionToken()
 
   if (pathname === '/login' && authenticated) {
     return NextResponse.redirect(new URL('/admin', request.url))

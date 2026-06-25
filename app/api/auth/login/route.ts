@@ -1,9 +1,8 @@
 import { NextResponse } from 'next/server'
-import crypto from 'crypto'
 
 function sessionToken() {
   const pass = process.env.APP_PASSWORD ?? 'admin1234'
-  return crypto.createHash('sha256').update(pass + 'cc_session_v1').digest('hex')
+  return Buffer.from(pass + ':cc_session_v1').toString('base64')
 }
 
 export async function POST(req: Request) {

@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 
-export async function POST() {
-  const res = NextResponse.redirect(new URL('/login', process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'))
+export async function POST(req: Request) {
+  const res = NextResponse.redirect(new URL('/login', req.url))
   res.cookies.delete('cc_session')
   return res
 }
