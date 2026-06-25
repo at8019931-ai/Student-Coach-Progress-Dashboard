@@ -2,7 +2,7 @@ import { NextResponse, type NextRequest } from 'next/server'
 
 function sessionToken() {
   const pass = process.env.APP_PASSWORD ?? 'admin1234'
-  return Buffer.from(pass + ':cc_session_v1').toString('base64')
+  return btoa(pass + ':cc_session_v1')
 }
 
 export function middleware(request: NextRequest) {
