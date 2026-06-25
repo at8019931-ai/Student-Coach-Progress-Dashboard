@@ -1,5 +1,3 @@
-import { redirect } from 'next/navigation'
-import { createClient } from '@/lib/supabase/server'
 import { fetchCoachStudentData, groupByCoach, detectLevel, fetchAllStudentProgress, deduplicateStudents } from '@/lib/cc-explorer'
 import { cn } from '@/lib/utils'
 import type { Metadata } from 'next'
@@ -19,10 +17,6 @@ const LEVEL_COLORS: Record<string, string> = {
 }
 
 export default async function CoachDashboard() {
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
-  if (!user) redirect('/login')
-
   const [rawData, rawStudents] = await Promise.all([
     fetchCoachStudentData().catch(() => []),
     fetchAllStudentProgress().catch(() => []),
