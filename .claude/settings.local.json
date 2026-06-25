@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__visualize__read_me",
+      "mcp__visualize__show_widget",
+      "Bash(find /usr /opt /Users/adityatiwari -name \"node\" -type f 2>/dev/null | head -10)",
+      "Read(//Users/adityatiwari/**)",
+      "Read(//opt/homebrew/**)",
+      "Bash(command -v node)",
+      "Bash(mkdir -p \"/Users/adityatiwari/Student Portal For CircleChess/app/\\(dashboard\\)/coach/students/[id]\" \"/Users/adityatiwari/Student Portal For CircleChess/app/\\(dashboard\\)/coach/assignments\" \"/Users/adityatiwari/Student Portal For CircleChess/app/\\(dashboard\\)/coach/classes\")",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}

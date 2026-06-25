@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Next.js Dev Server",
+      "runtimeExecutable": "/tmp/node-v22.12.0-darwin-arm64/bin/node",
+      "runtimeArgs": ["/Users/adityatiwari/Student Portal For CircleChess/node_modules/.bin/next", "dev"],
+      "port": 3000,
+      "autoPort": true
+    }
+  ]
+}
