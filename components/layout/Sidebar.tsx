@@ -8,20 +8,21 @@ interface NavItem { label: string; href: string; icon: string }
 
 const navBySection: Record<string, NavItem[]> = {
   admin: [
-    { label: 'Dashboard',  href: '/admin',           icon: '🏠' },
-    { label: 'Users',      href: '/admin/users',     icon: '👥' },
-    { label: 'Classes',    href: '/admin/classes',   icon: '📅' },
-    { label: 'Analytics',  href: '/admin/analytics', icon: '📊' },
+    { label: 'Dashboard',  href: '/admin',            icon: '🏠' },
+    { label: 'Users',      href: '/admin/users',      icon: '👥' },
+    { label: 'Batches',    href: '/admin/classes',    icon: '📅' },
+    { label: 'Analytics',  href: '/admin/analytics',  icon: '📊' },
+    { label: 'Syllabus',   href: '/admin/syllabus',   icon: '📚' },
   ],
   coach: [
-    { label: 'Dashboard',  href: '/coach',            icon: '🏠' },
-    { label: 'Students',   href: '/coach/students',   icon: '👥' },
-    { label: 'Assignments',href: '/coach/assignments', icon: '📋' },
+    { label: 'Dashboard',  href: '/coach',             icon: '🏠' },
+    { label: 'Students',   href: '/coach/students',    icon: '👥' },
+    { label: 'Journey',    href: '/student/roadmap',   icon: '🗺️' },
   ],
   student: [
     { label: 'Dashboard',  href: '/student',              icon: '🏠' },
+    { label: 'My Journey', href: '/student/roadmap',      icon: '🗺️' },
     { label: 'Assignments',href: '/student/assignments',  icon: '📋' },
-    { label: 'Roadmap',    href: '/student/roadmap',      icon: '🗺️' },
     { label: 'Achievements',href: '/student/achievements',icon: '🏆' },
   ],
 }
