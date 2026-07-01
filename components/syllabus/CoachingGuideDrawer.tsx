@@ -254,7 +254,7 @@ export default function CoachingGuideDrawer({ level, session, topic, isTest }: P
                   <div className="h-3 bg-gray-100 rounded w-4/6" />
                 </div>
               ))}
-              <p className="text-xs text-gray-400 text-center pt-2">Generating coaching guide — takes 15–25 seconds…</p>
+              <p className="text-xs text-gray-400 text-center pt-2">Generating coaching guide — takes 15–20 seconds…</p>
             </div>
           )}
 
