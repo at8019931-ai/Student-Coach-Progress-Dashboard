@@ -229,9 +229,9 @@ export default function CoachingGuideDrawer({ level, session, topic, isTest }: P
             <div className="bg-red-50 border border-red-200 rounded-xl p-4">
               <p className="text-sm font-semibold text-red-700 mb-1">Generation failed</p>
               <p className="text-xs text-red-600">{error}</p>
-              {error.includes('ANTHROPIC_API_KEY') && (
+              {error.includes('OPENAI_API_KEY') && (
                 <p className="text-xs text-red-500 mt-2">
-                  Add <code className="bg-red-100 px-1 rounded">ANTHROPIC_API_KEY</code> to your Vercel environment variables to enable AI coaching guides.
+                  Add <code className="bg-red-100 px-1 rounded">OPENAI_API_KEY</code> to your Vercel environment variables to enable AI coaching guides.
                 </p>
               )}
               <button

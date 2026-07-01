@@ -75,8 +75,8 @@ export async function GET(req: Request) {
   const session = searchParams.get('session') ?? ''
   const topic   = searchParams.get('topic')   ?? ''
 
-  if (!process.env.ANTHROPIC_API_KEY) {
-    return Response.json({ error: 'ANTHROPIC_API_KEY environment variable is not set' }, { status: 500 })
+  if (!process.env.OPENAI_API_KEY) {
+    return Response.json({ error: 'OPENAI_API_KEY environment variable is not set' }, { status: 500 })
   }
   if (!level || !session || !topic) {
     return Response.json({ error: 'Missing level, session, or topic params' }, { status: 400 })
@@ -90,34 +90,35 @@ Topic: ${topic}
 
 Follow all 18 sections exactly. Tailor the story, analogies, activities, and difficulty to students at the ${level} level.`
 
-  const anthropicRes = await fetch('https://api.anthropic.com/v1/messages', {
+  const openaiRes = await fetch('https://api.openai.com/v1/chat/completions', {
     method: 'POST',
     headers: {
-      'x-api-key': process.env.ANTHROPIC_API_KEY,
-      'anthropic-version': '2023-06-01',
+      'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
       'content-type': 'application/json',
     },
     body: JSON.stringify({
-      model: 'claude-sonnet-5',
+      model: 'gpt-4o',
       max_tokens: 8000,
       stream: true,
-      system: SYSTEM_PROMPT,
-      messages: [{ role: 'user', content: userPrompt }],
+      messages: [
+        { role: 'system', content: SYSTEM_PROMPT },
+        { role: 'user',   content: userPrompt },
+      ],
     }),
   })
 
-  if (!anthropicRes.ok) {
-    const err = await anthropicRes.text()
-    return Response.json({ error: `Claude API error: ${anthropicRes.status} — ${err}` }, { status: 500 })
+  if (!openaiRes.ok) {
+    const err = await openaiRes.text()
+    return Response.json({ error: `OpenAI API error: ${openaiRes.status} — ${err}` }, { status: 500 })
   }
 
-  // Transform Anthropic SSE stream → plain text stream
+  // Transform OpenAI SSE stream → plain text stream
   const encoder = new TextEncoder()
   const decoder = new TextDecoder()
 
   const stream = new ReadableStream({
     async start(controller) {
-      const reader = anthropicRes.body!.getReader()
+      const reader = openaiRes.body!.getReader()
       try {
         let buffer = ''
         while (true) {
@@ -132,9 +133,8 @@ Follow all 18 sections exactly. Tailor the story, analogies, activities, and dif
             if (!data || data === '[DONE]') continue
             try {
               const parsed = JSON.parse(data)
-              if (parsed.type === 'content_block_delta' && parsed.delta?.type === 'text_delta') {
-                controller.enqueue(encoder.encode(parsed.delta.text))
-              }
+              const text = parsed.choices?.[0]?.delta?.content
+              if (text) controller.enqueue(encoder.encode(text))
             } catch { /* skip malformed lines */ }
           }
         }
