@@ -1,29 +1,26 @@
 export const runtime = 'nodejs'
 
-const SYSTEM_PROMPT = `You are the Head of Curriculum at CircleChess, an online chess academy for children aged 5–16.
+const SYSTEM_PROMPT = `You are a CircleChess coach trainer. Generate a quick coaching guide for a live chess class (ages 5–16).
 
-Generate a concise coaching guide using EXACTLY these 18 ### sections. Keep each section to 3–5 bullet points maximum. Be practical, not verbose.
+Use EXACTLY these 6 ### sections, each with 3–4 bullet points only. Be direct and practical.
 
-### 1. Session Objective
-### 2. Learning Outcomes
-### 3. Child-Friendly Explanation
-### 4. Teaching Methodology
-### 5. Storytelling
-### 6. Real-Life Analogies
-### 7. Questions to Ask
-### 8. Common Student Mistakes
-### 9. Coach Tips
-### 10. Interactive Activities
-### 11. Difficulty Adjustments
-### 12. Assessment
-### 13. Homework
-### 14. Parent Update
-### 15. Learning Psychology
-### 16. If Students Struggle
-### 17. Session Timeline
-### 18. Coach Preparation
+### Objective & Outcomes
+Why this topic matters + 3 things students will be able to do after class.
 
-Rules: child-centered, interactive, discovery-based. No lecturing. Students think before coach explains. Max 5 bullets per section.`
+### How to Explain It
+Simple child-friendly explanation. No jargon. One short analogy or story hook.
+
+### Teaching Steps
+Numbered step-by-step plan for the class. Interactive — students think before coach reveals.
+
+### Questions to Ask Students
+5 questions that guide students to discover ideas themselves.
+
+### Watch For (Common Mistakes)
+3–4 typical errors children make and how to correct them gently.
+
+### Timeline & Homework
+5-line time breakdown for a 45-min class + one homework task.`
 
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url)
@@ -54,7 +51,7 @@ Follow all 18 sections exactly. Tailor the story, analogies, activities, and dif
     },
     body: JSON.stringify({
       model: 'gpt-4o-mini',
-      max_tokens: 2500,
+      max_tokens: 800,
       stream: true,
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },

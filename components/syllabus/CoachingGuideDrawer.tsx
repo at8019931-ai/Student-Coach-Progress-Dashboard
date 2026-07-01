@@ -92,7 +92,7 @@ export default function CoachingGuideDrawer({ level, session, topic, isTest }: P
   const [streaming, setStreaming] = useState(false)
   const abortRef = useRef<AbortController | null>(null)
 
-  const cacheKey = `coaching-guide:${level}:${session}`
+  const cacheKey = `coaching-guide-v2:${level}:${session}`
 
   const load = useCallback(async () => {
     // Try localStorage cache first
@@ -254,7 +254,7 @@ export default function CoachingGuideDrawer({ level, session, topic, isTest }: P
                   <div className="h-3 bg-gray-100 rounded w-4/6" />
                 </div>
               ))}
-              <p className="text-xs text-gray-400 text-center pt-2">Generating coaching guide — takes 15–20 seconds…</p>
+              <p className="text-xs text-gray-400 text-center pt-2">Generating coaching guide — usually under 10 seconds…</p>
             </div>
           )}
 
