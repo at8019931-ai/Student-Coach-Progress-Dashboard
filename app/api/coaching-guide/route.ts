@@ -28,8 +28,8 @@ export async function GET(req: Request) {
   const session = searchParams.get('session') ?? ''
   const topic   = searchParams.get('topic')   ?? ''
 
-  if (!process.env.OPENAI_API_KEY) {
-    return Response.json({ error: 'OPENAI_API_KEY environment variable is not set' }, { status: 500 })
+  if (!process.env.GROQ_API_KEY) {
+    return Response.json({ error: 'GROQ_API_KEY environment variable is not set' }, { status: 500 })
   }
   if (!level || !session || !topic) {
     return Response.json({ error: 'Missing level, session, or topic params' }, { status: 400 })
@@ -43,14 +43,14 @@ Topic: ${topic}
 
 Follow all 18 sections exactly. Tailor the story, analogies, activities, and difficulty to students at the ${level} level.`
 
-  const openaiRes = await fetch('https://api.openai.com/v1/chat/completions', {
+  const openaiRes = await fetch('https://api.groq.com/openai/v1/chat/completions', {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
+      'Authorization': `Bearer ${process.env.GROQ_API_KEY}`,
       'content-type': 'application/json',
     },
     body: JSON.stringify({
-      model: 'gpt-4o-mini',
+      model: 'llama-3.1-70b-versatile',
       max_tokens: 800,
       stream: true,
       messages: [
