@@ -13,6 +13,7 @@ const navBySection: Record<string, NavItem[]> = {
     { label: 'Batches',    href: '/admin/classes',    icon: '📅' },
     { label: 'Analytics',  href: '/admin/analytics',  icon: '📊' },
     { label: 'Syllabus',   href: '/admin/syllabus',   icon: '📚' },
+    { label: 'Renewals',   href: '/admin/renewals',   icon: '🔄' },
   ],
   coach: [
     { label: 'Dashboard',  href: '/coach',             icon: '🏠' },
