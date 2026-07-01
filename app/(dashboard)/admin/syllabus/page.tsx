@@ -12,6 +12,9 @@ const LEVEL_ORDER = [
   'Intermediate 1', 'Intermediate 2', 'Intermediate 3', 'Intermediate 4',
 ] as const
 
+// Always show these levels even with 0 students (curriculum reference)
+const ALWAYS_SHOW = new Set(['Beginner', 'Foundation 1', 'Foundation 2', 'Foundation 3', 'Foundation 4'])
+
 const LEVEL_COLORS: Record<string, { badge: string; bar: string; test: string }> = {
   'Beginner':      { badge: 'bg-emerald-100 text-emerald-700', bar: 'bg-emerald-500', test: 'bg-emerald-300' },
   'Foundation 1':  { badge: 'bg-sky-100 text-sky-700',         bar: 'bg-sky-500',     test: 'bg-sky-300' },
@@ -49,7 +52,11 @@ export default async function SyllabusPage() {
         const sessions = SYLLABUS[level]
         const levelStudents = byLevel[level] ?? []
         const colors = LEVEL_COLORS[level]
-        if (!levelStudents.length) return null
+        if (!levelStudents.length && !ALWAYS_SHOW.has(level)) return null
+
+        const avg = levelStudents.length
+          ? Math.round(levelStudents.reduce((s, st) => s + Math.min(st.total_sessions, 24), 0) / levelStudents.length)
+          : null
 
         return (
           <div key={level} className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
@@ -57,11 +64,13 @@ export default async function SyllabusPage() {
             <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100">
               <div className="flex items-center gap-3">
                 <span className={cn('text-xs font-bold px-3 py-1 rounded-full', colors.badge)}>{level}</span>
-                <span className="text-sm text-gray-500">{levelStudents.length} students · 24 sessions</span>
+                <span className="text-sm text-gray-500">
+                  {levelStudents.length ? `${levelStudents.length} students` : 'Curriculum reference'} · 24 sessions
+                </span>
               </div>
-              <span className="text-xs text-gray-400">
-                Avg {Math.round(levelStudents.reduce((s, st) => s + Math.min(st.total_sessions, 24), 0) / levelStudents.length)}/24 sessions
-              </span>
+              {avg !== null && (
+                <span className="text-xs text-gray-400">Avg {avg}/24 sessions</span>
+              )}
             </div>
 
             {/* Session grid legend */}
