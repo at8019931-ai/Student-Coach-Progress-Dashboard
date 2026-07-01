@@ -1,6 +1,7 @@
 import { cn } from '@/lib/utils'
 import { SYLLABUS, syllabusLevelFromCC } from '@/lib/syllabus'
 import { fetchAllStudentProgress, deduplicateStudents, detectLevel } from '@/lib/cc-explorer'
+import CoachingGuideDrawer from '@/components/syllabus/CoachingGuideDrawer'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = { title: 'Syllabus & Progress — Admin' }
@@ -64,17 +65,23 @@ export default async function SyllabusPage() {
             </div>
 
             {/* Session grid legend */}
-            <div className="px-6 py-3 bg-gray-50 border-b border-gray-100">
-              <div className="flex gap-4 flex-wrap">
+            <div className="px-6 py-4 bg-gray-50 border-b border-gray-100">
+              <div className="space-y-1.5">
                 {sessions.map(sess => (
-                  <div key={sess.session} className="flex items-center gap-1.5 min-w-[200px]">
+                  <div key={sess.session} className="flex items-center gap-2 group">
                     <div className={cn(
                       'w-5 h-5 rounded flex items-center justify-center text-[9px] font-bold shrink-0 text-white',
                       sess.isTest ? colors.test : colors.bar
                     )}>
                       {sess.isTest ? '★' : sess.session}
                     </div>
-                    <span className="text-[11px] text-gray-600 truncate">{sess.topic}</span>
+                    <span className="text-[11px] text-gray-600 flex-1">{sess.topic}</span>
+                    <CoachingGuideDrawer
+                      level={level}
+                      session={sess.session}
+                      topic={sess.topic}
+                      isTest={sess.isTest}
+                    />
                   </div>
                 ))}
               </div>
