@@ -175,13 +175,14 @@ export default function CoachingGuideDrawer({ level, session, topic, isTest }: P
         onClick={openDrawer}
         title="Open Coaching Guide"
         className={cn(
-          'shrink-0 w-6 h-6 rounded flex items-center justify-center text-[10px] transition',
+          'shrink-0 flex items-center gap-1.5 px-2.5 h-7 rounded-md text-xs font-semibold transition whitespace-nowrap',
           isTest
             ? 'bg-amber-100 text-amber-600 hover:bg-amber-200'
             : 'bg-primary/10 text-primary hover:bg-primary/20'
         )}
       >
-        📖
+        <span className="text-base leading-none">📖</span>
+        <span>Guide</span>
       </button>
 
       {/* Backdrop */}

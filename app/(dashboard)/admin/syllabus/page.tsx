@@ -1,7 +1,9 @@
+import { Suspense } from 'react'
 import { cn } from '@/lib/utils'
 import { SYLLABUS, syllabusLevelFromCC } from '@/lib/syllabus'
 import { fetchAllStudentProgress, deduplicateStudents, detectLevel } from '@/lib/cc-explorer'
 import CoachingGuideDrawer from '@/components/syllabus/CoachingGuideDrawer'
+import SyllabusFilter from '@/components/syllabus/SyllabusFilter'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = { title: 'Syllabus & Progress — Admin' }
@@ -27,7 +29,12 @@ const LEVEL_COLORS: Record<string, { badge: string; bar: string; test: string }>
   'Intermediate 4':{ badge: 'bg-red-100 text-red-700',         bar: 'bg-red-500',     test: 'bg-red-300' },
 }
 
-export default async function SyllabusPage() {
+export default async function SyllabusPage({
+  searchParams,
+}: {
+  searchParams?: { level?: string }
+}) {
+  const selectedLevel = searchParams?.level ?? ''
   const rawStudents = await fetchAllStudentProgress().catch(() => [])
   const students = deduplicateStudents(rawStudents)
 
@@ -41,14 +48,24 @@ export default async function SyllabusPage() {
     byLevel[key].push(s)
   }
 
+  // Filter levels based on dropdown selection
+  const visibleLevels = selectedLevel
+    ? LEVEL_ORDER.filter(l => l === selectedLevel)
+    : LEVEL_ORDER
+
   return (
     <div className="space-y-8">
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900">Syllabus & Student Progress</h1>
-        <p className="text-sm text-gray-500 mt-0.5">Full curriculum with session-level progress per student</p>
+      <div className="flex items-start justify-between gap-4 flex-wrap">
+        <div>
+          <h1 className="text-2xl font-bold text-gray-900">Syllabus & Student Progress</h1>
+          <p className="text-sm text-gray-500 mt-0.5">Full curriculum with session-level progress per student</p>
+        </div>
+        <Suspense fallback={null}>
+          <SyllabusFilter />
+        </Suspense>
       </div>
 
-      {LEVEL_ORDER.map(level => {
+      {visibleLevels.map(level => {
         const sessions = SYLLABUS[level]
         const levelStudents = byLevel[level] ?? []
         const colors = LEVEL_COLORS[level]
@@ -112,7 +129,7 @@ export default async function SyllabusPage() {
                     <div className="flex-1 flex items-center gap-0.5">
                       {sessions.map(sess => {
                         const done = sess.session <= completed
-                        const current = sess.session === completed + 1
+                        const isCurrent = sess.session === completed + 1
                         return (
                           <div
                             key={sess.session}
@@ -120,8 +137,8 @@ export default async function SyllabusPage() {
                             className={cn(
                               'flex-1 h-5 rounded-sm flex items-center justify-center text-[8px] font-bold',
                               sess.isTest
-                                ? done ? 'bg-amber-400 text-white' : current ? 'bg-amber-100 text-amber-400' : 'bg-gray-100 text-gray-300'
-                                : done ? `${colors.bar} text-white` : current ? 'bg-primary/10 text-primary' : 'bg-gray-100 text-gray-300'
+                                ? done ? 'bg-amber-400 text-white' : isCurrent ? 'bg-amber-100 text-amber-400' : 'bg-gray-100 text-gray-300'
+                                : done ? `${colors.bar} text-white` : isCurrent ? 'bg-primary/10 text-primary' : 'bg-gray-100 text-gray-300'
                             )}
                           >
                             {sess.isTest ? '★' : ''}
