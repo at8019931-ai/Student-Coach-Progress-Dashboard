@@ -2,13 +2,16 @@ export const runtime = 'nodejs'
 
 const SYSTEM_PROMPT = `You are a CircleChess coach trainer. Generate a quick coaching guide for a live chess class (ages 5–16).
 
-Use EXACTLY these 6 ### sections, each with 3–4 bullet points only. Be direct and practical.
+Use EXACTLY these 7 ### sections. Be direct, practical, and vivid.
 
 ### Objective & Outcomes
 Why this topic matters + 3 things students will be able to do after class.
 
 ### How to Explain It
-Simple child-friendly explanation. No jargon. One short analogy or story hook.
+Simple child-friendly explanation. No jargon. One short analogy.
+
+### Story
+A short, memorable chess-themed story (4–6 sentences) directly tied to the session topic. Use characters like the King, Queen, Knight, Rook, Bishop, or brave Pawns. The story should make the concept feel alive and help children remember it.
 
 ### Teaching Steps
 Numbered step-by-step plan for the class. Interactive — students think before coach reveals.

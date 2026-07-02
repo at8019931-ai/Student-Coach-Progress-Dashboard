@@ -93,7 +93,7 @@ export default function CoachingGuideDrawer({ level, session, topic, isTest }: P
   const [streaming, setStreaming] = useState(false)
   const abortRef = useRef<AbortController | null>(null)
 
-  const cacheKey = `coaching-guide-v2:${level}:${session}`
+  const cacheKey = `coaching-guide-v3:${level}:${session}`
 
   const load = useCallback(async () => {
     // 1. Check pre-written static guides first (instant, no API)

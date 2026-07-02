@@ -14,6 +14,9 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - The **Rook** is like a castle on wheels — it slides in straight lines as far as it wants, but cannot jump.
 - Goal of the game: trap the enemy King so it cannot escape — that is **Checkmate**.
 
+### Story
+Once upon a time, two kingdoms faced each other across a great black-and-white battlefield of 64 squares. Each kingdom had powerful warriors lined up and ready for battle. The mightiest fortress defenders were the **Rooks** — great stone towers that could roll at lightning speed along any straight road, covering the entire battlefield in seconds. "Nothing gets past me on a straight path!" boasted the Rook. But the moment an ally blocked the road, the Rook had to wait — it could never jump over anyone. The two kingdoms stared across the board, each planning the first move. The war was about to begin.
+
 ### Teaching Steps
 1. Count squares together — ask "How many?" before revealing the answer.
 2. Name the ranks (1–8) and files (a–h); play "find square d4" with students.
@@ -51,6 +54,9 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - **Queen:** The superhero of chess — she moves like both the Rook AND the Bishop combined.
 - **Pawn:** Brave little soldiers who march forward one square (or two on their first move) and capture diagonally.
 - **Notation:** Each square has an address — column letter + row number. "e4" means column e, row 4.
+
+### Story
+The Queen of the White Kingdom was the most powerful warrior on the battlefield — she could race down straight roads like the Rook OR glide diagonally like a shadow. "No square is safe from me!" she declared. Beside her stood the two **Bishops** — wise old magicians in pointed hats who could only walk on diagonal paths. "We see the world differently," said the white-square Bishop with a smile, "and we never change the colour of the square we walk on." In front of them all marched the brave **Pawns** — small soldiers who moved forward one steady step at a time, but could strike diagonally when attacking. They kept careful notes of every battle in a language called **Notation** — so that one day, the world could learn from their games.
 
 ### Teaching Steps
 1. Ask "If you could design the most powerful piece, what would it do?" — then reveal the Queen.
@@ -91,6 +97,9 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - **Piece Values:** Like coins — Pawn=1, Knight=Bishop=3, Rook=5, Queen=9. Trading a Rook for a Knight is losing 2 coins.
 - Trick to remember the Knight's L: "two steps and a turn."
 
+### Story
+The **King** sat on his golden throne, dignified and cautious. He would only ever take one careful step at a time in any direction — he was too important to rush into danger. But the **Knight** was nothing like the King. Sir Horatio the Knight was a acrobatic warrior on horseback who could leap over walls, soldiers, and obstacles in a spectacular L-shaped jump — the only warrior on the entire battlefield who could do so! "Nobody can predict where I'll land!" he laughed, vaulting over a row of Pawns. Each warrior in the kingdom had a **value** — like coins in a treasure chest. The humble Pawn was worth 1 coin, Knights and Bishops 3, the mighty Rook 5, and the Queen a whopping 9. "Trade wisely," advised the King, "for every piece lost is a coin gone from our treasury."
+
 ### Teaching Steps
 1. Introduce the Knight's L-shape with a physical demonstration — walk it on the floor if possible.
 2. "Find all the squares a Knight on d4 can reach" — students explore before you count together.
@@ -106,7 +115,7 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - "Which is worth more: two Bishops or a Rook and a Pawn?"
 
 ### Watch For (Common Mistakes)
-- Knight moving in straight L instead of diagonal — always verify the landing square.
+- Knight moving in straight L instead of the correct L-shape — always verify the landing square.
 - Students moving the King multiple squares like a Queen — strict one-square rule.
 - Thinking piece values are fixed in all situations — build intuition: position matters too.
 
@@ -128,6 +137,9 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - Imagine pieces on the board are like free sweets on a table — if no one is guarding them, pick them up!
 - **Attack** = aiming at a piece. **Capture** = taking it off the board.
 - Before every move, ask: "Am I leaving something free? Can I take something free?"
+
+### Story
+General Rook had marched boldly to the centre of the battlefield and stopped — completely alone, with no allies nearby. On the other side, young Pawn couldn't believe his eyes. "Is that Rook really standing there with nobody protecting it?" he whispered. It was true — the Rook was **hanging**, like a bag of gold left in the middle of the street with no guard. Pawn scurried forward and captured the mighty Rook for free. Back at headquarters, General Rook's commander shook his head sadly. "Never leave your warriors without support," he said. "An unguarded piece is a gift to the enemy." From that day on, every piece in the kingdom learned the golden rule: **always have a friend nearby.**
 
 ### Teaching Steps
 1. Set up a position with 3 hanging pieces of different types — "Find the free sweets!"
@@ -157,7 +169,7 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - **Homework:** Play 3 games and after each game count how many free pieces you took and missed.`,
 
     5: `### Objective & Outcomes
-- Learn the 4 ways to protect a piece: A=Attack the attacker, B=Block, C=Cover (add a defender), D=Defend (move the piece away).
+- Learn the 4 ways to protect a piece: A=Attack the attacker, B=Block, C=Cover (add a defender), D=Depart (move away).
 - Students can: apply the correct ABCD method in a given position; explain why each method works.
 - Directly builds on Session 4 (hanging pieces) — now students can STOP pieces from hanging.
 
@@ -167,7 +179,9 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
   - **B – Block:** Put another piece between the attacker and the attacked piece.
   - **C – Cover:** Add another defender to the attacked piece.
   - **D – Depart (move away):** Simply move the attacked piece to safety.
-- Analogy: Your friend is being chased by a bully — you can confront the bully (A), stand between them (B), bring another friend (C), or pull your friend away (D).
+
+### Story
+Princess Bishop was in trouble — the enemy Knight was aiming straight at her. The King called an emergency meeting of his four loyal generals. General **Attack** stepped forward: "Send our Queen to threaten their King — they'll be too busy to capture the Bishop!" General **Block** had a different plan: "Place a Pawn between the Knight and the Bishop — problem solved!" General **Cover** shook his head: "No, no — bring the Rook beside the Bishop so if the Knight takes her, we take back!" And wise old General **Depart** simply said: "Why not just move the Bishop out of danger entirely?" The King listened to all four generals. "You are all right," he said. "The best choice depends on the position. Remember: **A, B, C, D** — and always pick the wisest option."
 
 ### Teaching Steps
 1. Show a piece under attack — ask "What can we do?" before mentioning ABCD.
@@ -190,7 +204,7 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 
 ### Timeline & Homework
 - 5 min – Warm-up: hanging piece spot from Session 4
-- 5 min – Introduce ABCD acronym with the bully story
+- 5 min – Introduce ABCD acronym with the story
 - 15 min – One position per letter: students solve each with the correct letter
 - 12 min – Mixed positions: students identify the letter AND make the move
 - 8 min – Partner game: attack and defend using ABCD
@@ -204,11 +218,11 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 ### How to Explain It
 - **Check** = The King is under direct attack — an emergency alarm has gone off!
 - When in check, you MUST deal with it — you cannot ignore it or make another move.
-- **3 ways out of check:**
-  1. **Block** — put a piece between the attacker and your King.
-  2. **Capture** — take the attacking piece.
-  3. **King moves** — move the King to a safe square.
+- **3 ways out of check:** Block, Capture the attacker, King moves to safety.
 - **Checkmate** = the King is in check AND has no escape — the game is over.
+
+### Story
+It was a quiet afternoon in the White Kingdom when suddenly the alarm bells rang out — CLANG! CLANG! CLANG! "THE KING IS IN CHECK!" shouted a guard. The enemy Queen had swept across the board and was pointing directly at the White King. Everyone froze. The King had three choices: his brave Knight could **jump in front** to block the Queen's path, the loyal Bishop could **capture** the enemy Queen, or the King himself could **step aside** to a safe square. But what if ALL three options were blocked? What if every escape route was cut off and every blocking square was covered? Then the alarm bells would ring forever — because it would be **Checkmate**, and the game would be over. "Always know your escape routes," the King warned his court, "before the alarm ever rings."
 
 ### Teaching Steps
 1. Put the King in check and say "The King is in danger! What must we do RIGHT NOW?"
@@ -226,7 +240,7 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 
 ### Watch For (Common Mistakes)
 - Moving a piece other than dealing with check — always stop and ask "Are you in check?"
-- Blocking check but the blocking piece is pinned (it was protecting the King already) — advanced but worth noting.
+- Blocking check but the blocking piece is pinned — worth noting even at beginner level.
 - Forgetting that capturing the attacker is also a valid escape.
 
 ### Timeline & Homework
@@ -247,6 +261,9 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - Remind: "Before every move, scan the whole board for free pieces."
 - Introduce the idea of the **candidate move process**: look → find options → pick the best.
 
+### Story
+Commander Chess called all the young trainees together for their first field exercise. "Today," she said, "I will set up a real battlefield. Your mission: find EVERY unguarded enemy soldier and capture the most valuable one first." The trainees looked at the board — there was a hanging Rook near the centre, a dangling Bishop on the wing, and a lonely Pawn in the corner. "Which do I grab first?" thought young recruit Anya. "The Rook is worth the most — that's my target!" She moved quickly, but then — disaster! Her capturing piece was now hanging too. "Ah," said Commander Chess with a smile. "A good soldier always checks: am I safe AFTER I capture?" The lesson was clear: spot the free pieces, pick the best one, and always look one step ahead.
+
 ### Teaching Steps
 1. Warm up with piece value recall (1 minute quiz).
 2. Present Position 1 (simple, 1 hanging piece) — students find it in 10 seconds.
@@ -263,7 +280,7 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 
 ### Watch For (Common Mistakes)
 - Rushing — students take the FIRST free piece they see, not the BEST one.
-- Capture forks — taking a free piece that walks into a trap.
+- Capture traps — taking a free piece that walks into danger.
 - Missing their OWN hanging pieces — reinforce the habit of checking both sides.
 
 ### Timeline & Homework
@@ -282,6 +299,9 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - "Today we see how much your chess brain has grown — there are no wrong answers, only learning."
 - Reassure students: every mistake in a test shows exactly what to practise next.
 - Tests are like a treasure map — they reveal where the gold (knowledge) still needs to be dug up.
+
+### Story
+The young chess students of the White Kingdom had trained hard for many weeks. Their teacher, the wise old Grandmaster, called them all together. "Today," he said gently, "is not a battle — it is a **mirror**. The positions I show you will reflect exactly what you know and what you are still learning." The children looked nervous, but the Grandmaster smiled. "Remember: the Knight who has never made a wrong jump has never practised enough. Every mistake is a lesson in disguise." One by one, the students sat down at their boards. Some positions were easy, some were tricky — but every one of them showed the Grandmaster something important. At the end, he gathered them together: "I am proud of every one of you. Now we know exactly where to dig for more gold."
 
 ### Teaching Steps
 1. Start with a calm breathing exercise — "Clear your mind, focus on the board."
@@ -303,7 +323,7 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - Copying — in group settings, ensure boards are set up independently.
 
 ### Timeline & Homework
-- 5 min – Warm-up breathing and confidence chat
+- 5 min – Confidence warm-up: 1 easy puzzle + breathing
 - 25 min – Test positions (5 positions, 5 min each)
 - 10 min – Group review: go through answers together
 - 5 min – Personal reflection and goal-setting for next sessions
@@ -317,11 +337,14 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 ### How to Explain It
 - Repetition session — chess skills become automatic through practice, not memorisation.
 - "Giving check is like pressing the alarm — your opponent MUST respond."
-- Combine the learning: "After you escape check, you also get to make a GOOD move — use ABCD to improve your position."
+- Combine the learning: after escaping check, use ABCD to improve your position.
+
+### Story
+In the training hall of the White Kingdom, young Squire Leo was drilling the art of **giving check**. First he sent the Queen sweeping across the board — CHECK! The Black King scrambled. Then he tried the Rook — CHECK! The King ran again. Then the sneaky Knight leaped over everyone — CHECK from an unexpected angle! "You're getting good at raising the alarm," said his trainer, "but now let's practice the other side." Leo switched to defending. A Bishop pointed at his King — could he block it? Could he capture the Bishop? Or should his King simply step away? Over and over they practiced until Leo could escape any check without even thinking. "Perfect defence," his trainer said, "comes from perfect repetition."
 
 ### Teaching Steps
 1. Start with 3 quick "give check with this piece" exercises from different board positions.
-2. Present 4 "escape the check" puzzles with increasing difficulty (1 option → 3 options → which is best?).
+2. Present 4 "escape the check" puzzles with increasing difficulty.
 3. Combined exercise: escape check AND protect a hanging piece in the same move.
 4. ABCD drill: set up 4 positions, students call out the letter before moving.
 5. Mini game: alternate between giving check and defending — who survives longest?
@@ -356,7 +379,9 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - **Centre squares:** d4, d5, e4, e5 — the 4 most important squares on the board (like the midfield in football).
 - **Extended centre:** c3–c6–f6–f3 — the ring around the centre.
 - White camp = rows 1–4; Black camp = rows 5–8.
-- "Control the centre and you control the game."
+
+### Story
+The great chess cartographer, Professor Pawn, once drew a famous map of the chess kingdom. "The four centre squares," he declared, pointing to d4, d5, e4, and e5, "are the **Royal Crossroads** — whoever controls them controls the entire kingdom, just as controlling a city's main square controls all the roads." Around the crossroads lay the **extended centre** — the inner ring of the great city. White's army lived in the southern half, Black's army in the north. "And here," said the Professor, tapping the corner of the map, "is where checkmate in one move happens most often — when the King is driven away from the safe centre and trapped against the edge." The students leaned in close. The map of the chess kingdom was starting to make perfect sense.
 
 ### Teaching Steps
 1. Show board geography first — draw or highlight the centre on a demo board.
@@ -382,7 +407,7 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - 10 min – Centre squares discussion and quiz
 - 15 min – Checkmate in 1 with each piece type
 - 10 min – Timed puzzle race
-- 5 min – "Today's winner" setup and reflection
+- 5 min – Reflection
 - **Homework:** Find 5 "Mate in 1" puzzles on Lichess and record which piece delivers the checkmate.`,
 
     11: `### Objective & Outcomes
@@ -394,11 +419,10 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - **Castling** = the King and Rook do a special teamwork move — the only time two pieces move at once!
 - **Kingside castle (0-0):** King slides 2 squares toward the h-file Rook; Rook jumps to the other side.
 - **Queenside castle (0-0-0):** King slides 2 squares toward the a-file Rook.
-- **4 conditions — you CANNOT castle if:**
-  1. The King has moved before.
-  2. The Rook has moved before.
-  3. The King is currently in check.
-  4. The King passes through or lands on an attacked square.
+- **You CANNOT castle if:** the King has moved, the Rook has moved, the King is in check, or the King passes through an attacked square.
+
+### Story
+The White King had always sat proudly in the centre, but as the battle raged, enemy pieces closed in from all sides. "Your Majesty," said the old Rook standing in the corner, "there is a **secret passage** known only to the royal family. You run two steps toward me, I leap over you to guard the door — and together we emerge safe on the other side!" The King had never used the secret passage before, but desperate times called for special measures. He sprinted two squares toward the Rook, who gracefully jumped over him and took up a defensive position. The King was now safely tucked behind a wall of Pawns, and the Rook stood ready to control the open file. The ancient tradition of **Castling** had saved the kingdom once again — but only because neither the King nor the Rook had ever moved from their original posts.
 
 ### Teaching Steps
 1. Ask "Why would a King want to hide?" — leads naturally into the purpose of castling.
@@ -433,12 +457,14 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - Completes all special moves — combines with castling for the full rulebook.
 
 ### How to Explain It
-- **En passant:** When a pawn moves 2 squares from its start and lands beside an enemy pawn, the enemy pawn can capture it AS IF it only moved 1 square. Must be done IMMEDIATELY on the next move.
-- **Pawn Promotion:** When a pawn reaches the opposite end of the board (row 8 for White, row 1 for Black), it can become ANY piece — almost always a Queen.
-- Story: "The pawn is a brave little soldier who earns a promotion — reaching the enemy's base earns them a crown!"
+- **En passant:** When a pawn moves 2 squares from its start and lands beside an enemy pawn, the enemy pawn can capture it AS IF it only moved 1 square. Must be done IMMEDIATELY.
+- **Pawn Promotion:** When a pawn reaches the opposite end of the board, it becomes ANY piece — almost always a Queen.
+
+### Story
+Little Private Pawn had dreamed his whole life of reaching the far side of the battlefield. One day, he gathered his courage and dashed forward **two squares** instead of one. But a rival enemy Pawn stood right beside him, furious. "You can't skip past me like that!" the enemy Pawn cried. And indeed — a special ancient law of chess gave the enemy Pawn the right to capture him **as if he had only moved one square**, but only on that very next move. If the opportunity was not taken immediately, the chance was gone forever. Private Pawn tried again on the other side of the board, and this time he reached the final row. A golden light shone down as he transformed — not just a humble Pawn anymore, but a magnificent **Queen**, the most powerful warrior in the entire kingdom. The little soldier's lifelong dream had come true through bravery and persistence.
 
 ### Teaching Steps
-1. Set up en passant situation — most students find it shocking and confusing at first, so go slowly.
+1. Set up en passant situation — go slowly, it's usually the most surprising rule for beginners.
 2. Show it happening step-by-step; have students do it on their own boards.
 3. Important: "If you don't take en passant NOW, the chance is gone forever."
 4. Set up a pawn race to the other side — demonstrate promotion.
@@ -452,7 +478,7 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - "Imagine you promote to a Rook instead of a Queen — when might that be the right choice?"
 
 ### Watch For (Common Mistakes)
-- En passant capture landing on the wrong square — the capturing pawn goes to the square the opponent's pawn PASSED through, not where it landed.
+- En passant capture landing on the wrong square — the capturing pawn goes to the square the opponent's pawn PASSED through.
 - Forgetting en passant must be immediate — this is a very common error.
 - Students not promoting to a Queen by default — remind them it is almost always the best choice.
 
@@ -465,15 +491,18 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - **Homework:** Explain en passant to a family member and teach them the pawn promotion rule.`,
 
     13: `### Objective & Outcomes
-- Learn assisted checkmates — delivering checkmate with help from other pieces: Q+K, R+K, B+N+K, P+any.
-- Students can: force checkmate with Queen and King, understand why lone pieces cannot checkmate alone.
-- Foundation for the two-Rook checkmate and Queen/Rook solo checkmates in Session 23.
+- Learn assisted checkmates — delivering checkmate with help: Q+K, R+K, multiple pieces together.
+- Students can: force checkmate with Queen and King against a lone King, understand why lone pieces cannot checkmate alone.
+- Foundation for the two-Rook checkmate in Session 23.
 
 ### How to Explain It
 - A single Queen usually cannot force checkmate without the King's help — teamwork is needed.
-- **Queen + King:** Push the lone King to the edge, then deliver checkmate.
+- **Queen + King:** Push the lone King to the edge, then deliver checkmate with both pieces working together.
 - **Rook + King:** Same principle — use the Rook to cut off files/ranks, King helps corner the enemy King.
-- Think of it like football: the King is the defender, the Queen/Rook is the striker scoring the goal.
+- Stalemate danger: never leave the enemy King with NO moves unless it's also in check!
+
+### Story
+The White Queen flew confidently onto the board. "Stand back," she told her King, "I'll handle this alone!" She chased the lone Black King around the board, check after check — but every time she thought she had him, the Black King slipped away or, worse, had no moves left and the game ended in a draw! "Stalemate!" cried the referee. The Queen stomped her foot in frustration. Then the wise White King waddled over. "Let me help," he said quietly. Together, the Queen cut off the enemy King's roads while the King marched up to support. The Black King was slowly, gently pushed to the edge of the board — and then, with the King blocking the escape squares and the Queen delivering the final check, it was **Checkmate**. "Teamwork," said the old King with a wink, "beats going it alone every time."
 
 ### Teaching Steps
 1. Show why Queen alone cannot mate — demonstrate the stalemate trap (very important!).
@@ -490,7 +519,7 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - "What is the minimum number of moves to checkmate with Queen and King?"
 
 ### Watch For (Common Mistakes)
-- Causing stalemate when winning easily — this is the #1 heartbreak for beginners; spend time on it.
+- Causing stalemate when winning easily — spend time on this, it's the #1 heartbreak for beginners.
 - Not activating the King to help — students often try to do everything with the Queen.
 - Giving unnecessary checks that push the King back to the centre — chase, don't push.
 
@@ -510,13 +539,15 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 ### How to Explain It
 - **Hanging piece:** No one protecting it — take it for free!
 - **Defended piece:** Protected by another piece — taking it might cost you more than you gain.
-- **The rule:** Before capturing, ask "If I take this, what happens next?" Count: attackers vs defenders.
-- Analogy: a sweet in a shop is free (hanging) — a sweet in someone's hand is defended; grabbing it causes trouble!
+- **The rule:** Before capturing, ask "If I take this, what happens next?" Count attackers vs defenders.
+
+### Story
+Young Knight Theo was galloping across the board when he spotted a gleaming enemy Bishop. "Free piece!" he thought, and leapt forward to capture it. But the moment he landed, an enemy Pawn stepped forward and captured HIM. Theo had not noticed the Pawn hiding behind the Bishop like a silent bodyguard. Back at camp, his mentor shook his head. "A piece that **looks** free is not always free," she said. "Always ask: who is protecting it? Count the guards before you grab." The next day, Theo spotted another Bishop — this time with a Pawn guarding it. He paused, counted, and decided to ride past. That evening, the Bishop made a blunder and became truly unguarded. THEN Theo swept in for the capture. "Now," grinned his mentor, "you are thinking like a real chess knight."
 
 ### Teaching Steps
 1. Show 3 positions: one hanging, one defended, one tricky (looks hanging but isn't).
 2. Teach the "attacker vs defender count" — tally both sides before deciding.
-3. Show a captured piece that causes the captor to be captured in return (the trap).
+3. Show a captured piece that causes the captor to be captured in return.
 4. Partner exercise: one student sets up, the other must decide "take or not take?"
 5. Game with rule: every capture must be justified before making it.
 
@@ -549,7 +580,9 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - **Profitable exchange:** Trading a lower-value piece for a higher-value one — you GAIN material.
 - Example: trading a Knight (3 points) for a Rook (5 points) = winning 2 points. Great deal!
 - **Unprofitable exchange:** Trading a Rook (5) for a Bishop (3) = losing 2 points. Avoid!
-- Analogy: exchanging a £5 note for a £10 note is great — exchanging a £10 note for a £5 note is not!
+
+### Story
+The Chess Merchant had spent years trading pieces on the battlefield, and she had one golden rule: **always know the value before you trade**. One day, a slippery enemy trader offered to swap her Knight for a Rook. She paused. "Knight is worth 3 coins, Rook is worth 5 coins — I gain 2 coins in this deal!" she smiled, and accepted immediately. The next day, the same trader offered to swap her Rook for a Bishop. She shook her head firmly. "Rook is 5, Bishop is 3 — I'd be losing 2 coins. No deal." The enemy trader slunk away. But then came the tricky offer: two Bishops for a Rook and a Pawn. She pulled out her abacus — 3+3=6 vs 5+1=6. "Equal trade," she murmured, "but which helps my position more?" Even when the coins balanced out, the wise Merchant always thought one step further.
 
 ### Teaching Steps
 1. Recap piece values with a quick quiz (30 seconds).
@@ -588,12 +621,15 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - "Every mistake you make today tells us exactly what to practise — it is useful information, not failure."
 - Use a growth mindset phrase: "Not yet — but getting closer!"
 
+### Story
+The Chess Academy held its second great **Trial of Progress**. Unlike the battles on the board, this was a battle with oneself — a chance to see how much stronger each student's chess mind had become since Test 1. Young student Maya sat down nervously. "I got stuck on the castling question last time," she remembered. She took a deep breath. "This time I know the four conditions by heart." She scanned the first position — a checkmate in one! She found it in seconds. The exchange puzzle came next — Knight for Rook, profitable, she wrote confidently. Position by position, she felt the months of practice shining through her fingers. When the scores came back, she had improved greatly. "The test didn't make you better," said her coach. "Your practice made you better. The test just showed it."
+
 ### Teaching Steps
 1. Calming warm-up: one breathing exercise and one easy puzzle to build confidence.
-2. Test positions cover: check escape, checkmate in 1, castling scenario, en passant spot, hanging piece, profitable exchange.
+2. Test positions cover: check escape, checkmate in 1, castling, en passant, hanging piece, profitable exchange.
 3. Students work independently and quietly.
 4. After test: paired discussion — students explain their answers to a partner.
-5. Coach shares observations: "I noticed everyone got checkmate in 1 — excellent! En passant needs more work."
+5. Coach shares observations positively.
 
 ### Questions to Ask Students (post-test)
 - "Which question surprised you the most?"
@@ -615,18 +651,20 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - **Homework:** Identify 2 areas from the test to practise and do 5 puzzles in each area on Lichess.`,
 
     17: `### Objective & Outcomes
-- Mixed checkmate practice: direct checkmates (attacker and King only) and assisted checkmates (supporting pieces).
+- Mixed checkmate practice: direct checkmates and assisted checkmates (supporting pieces).
 - Students can: identify checkmate patterns when multiple pieces are on the board, find the mating move quickly.
 - Bridges single-piece checkmates to real game positions where the board is crowded.
 
 ### How to Explain It
 - **Direct checkmate:** A piece directly attacks the King and it cannot escape, block, or capture.
 - **Assisted checkmate:** One piece gives check while others cover the escape squares.
-- Think of it as: the striker shoots (direct check), the team blocks exits (covers escape squares).
 - The key skill: LOOK at all squares the King could run to BEFORE you make the mating move.
 
+### Story
+General Queen surveyed the battlefield. The Black King was cornered near the edge, surrounded by his own pieces with nowhere to run. "This is our moment," she whispered to the Rook beside her. The Rook nodded — its job was to **seal the exit** on the back rank while the Queen delivered the **final blow**. Together they formed the perfect trap: the Queen moved to the critical square, CHECK. The Black King looked left — the Rook blocked that road. He looked right — his own Bishop was in the way. He tried to flee upward — but the White Queen covered that square too. There was no escape. The positions of two humble pieces working as one team had achieved what neither could do alone: **Checkmate**. The crowd roared. "That," said General Queen, "is the beauty of assisted checkmate."
+
 ### Teaching Steps
-1. Start with 3 direct mates — students should solve instantly ("like reading a word").
+1. Start with 3 direct mates — students should solve instantly.
 2. Move to 3 assisted mates — students must trace the King's escape squares first.
 3. Introduce a "mate in 1 checklist": is the King in check? Can it capture? Can it run? Can it be blocked?
 4. Mixed drill: 10 positions — half direct, half assisted — students label each as D or A.
@@ -660,11 +698,13 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 ### How to Explain It
 - **Draw:** The game ends with no winner — neither side wins or loses.
 - **Stalemate:** A player has NO legal move but is NOT in check — the game immediately ends as a draw!
-- Analogy: you've backed a player into a corner so tightly they are frozen — if they're not in check, you've gone too far and it's a draw!
 - When you are winning, leave the opponent at least ONE legal move at all times until you can deliver checkmate.
 
+### Story
+The White army had won everything — only the lonely Black King remained on the board. The White Queen danced around him triumphantly, checking him again and again. "I'll finish this quickly!" she boasted, and moved to a square that left the Black King with absolutely NO moves. But wait — the King was NOT in check! He was simply **frozen**, stuck, with nowhere to go. The referee raised a hand: "**Stalemate. The game is a draw.**" The White Queen's jaw dropped. She had won every piece on the board and still only got half a point! "You squeezed him too tightly," said the old White King sadly. "A mouse that has no hole to run to is not defeated — it is simply trapped in a draw. Always leave one door open until you are ready to close it forever with checkmate."
+
 ### Teaching Steps
-1. Show a stalemate position — "Why is this a draw?" Students usually say "the King can't move, so it should be a win!" Correct the misconception.
+1. Show a stalemate position — "Why is this a draw?" Correct the misconception.
 2. Show 3 positions — students judge: is this checkmate or stalemate?
 3. Classic stalemate trap with Queen alone vs King — show how to fall into it.
 4. Show how to AVOID stalemate: give the King a safe square to waste a move on.
@@ -678,8 +718,8 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - "Has anyone ever accidentally drawn a winning game? How did it feel?"
 
 ### Watch For (Common Mistakes)
-- Students still confusing stalemate and checkmate after explanation — run through the definition again: stalemate = NOT in check + NO legal move.
-- Accidentally stalemating during Q+K vs K practice — this must be caught and corrected immediately.
+- Students still confusing stalemate and checkmate after explanation — run through the definition again.
+- Accidentally stalemating during Q+K vs K practice — catch and correct immediately.
 
 ### Timeline & Homework
 - 5 min – Warm-up: checkmate in 1 quick round
@@ -696,9 +736,12 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 
 ### How to Explain It
 - **Draw by agreement:** Both players shake hands and agree to call it even.
-- **Threefold repetition:** The SAME position (including whose turn it is) appears 3 times — either player can claim a draw.
-- **50-move rule:** If no pawn has moved and no piece has been captured in the last 50 moves by each player (100 moves total), either player can claim a draw.
-- **Insufficient material:** Neither side has enough pieces to deliver checkmate (e.g., K vs K, K+B vs K, K+N vs K).
+- **Threefold repetition:** The SAME position appears 3 times — either player can claim a draw.
+- **50-move rule:** No pawn move and no capture for 50 moves each — either player can claim a draw.
+- **Insufficient material:** Neither side can force checkmate (e.g., K vs K, K+B vs K).
+
+### Story
+Two kings had been battling for so long that the sun had set and risen many times. The battlefield was nearly empty — most warriors had fallen. "I cannot win," thought the White King, "but neither can he." The two armies had chased each other around the board, repeating the same positions over and over. Finally, the Black King raised a white flag — not surrender, but an offer of **peace**. "I propose a draw," he said. "We have moved 50 times with no captures and no pawn advances — this battle can never be won." The White King considered. Sometimes, accepting a draw was the wisest decision of all — especially when the alternative was playing forever with no result. The royal scribes recorded all four ways the great Chess Wars could end in peace: agreement, repetition, the fifty-move truce, and the simple truth that some armies are just too small to win.
 
 ### Teaching Steps
 1. Ask "Can a chess game go on forever?" — leads to the 50-move and repetition rules.
@@ -715,8 +758,8 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - "King vs King — is it draw? What about King + two Knights vs King?"
 
 ### Watch For (Common Mistakes)
-- Students thinking K+N+N vs K is automatic checkmate — it is actually very rare and is usually a draw (technically it CANNOT be forced, interesting discussion!).
-- Confusing "stalemate" with "threefold repetition" — review both definitions side by side.
+- Confusing stalemate with threefold repetition — review both definitions side by side.
+- Students thinking K+N+N vs K is automatic checkmate — it usually cannot be forced.
 
 ### Timeline & Homework
 - 5 min – Stalemate recap from Session 18
@@ -734,7 +777,9 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 ### How to Explain It
 - Consolidation session — no new rules. All the rules combined in one position.
 - "By now you know EVERY rule in chess. Today we put them all together."
-- Real games use ALL rules at unpredictable moments — practice recognising when they apply.
+
+### Story
+The Royal Chess Academy held its famous **Grand Simulation** — a training exercise where all the special rules of chess came to life at once. In one corner of the board, a Pawn dashed two squares forward and an enemy Pawn shouted "En passant!" and captured it diagonally. Across the board, a King sprinted two squares toward his Rook who leapt neatly over him — **Castling** complete. A brave Pawn reached the far end and transformed in a flash of golden light into a powerful **Queen**. Meanwhile, on the other side, a player had only a Bishop left with no Pawns — "**Insufficient material!**" declared the referee. One player moved back to a position they'd visited twice before — one more time and the other could claim **threefold repetition**. "Every special rule exists for a reason," said the Grandmaster, watching it all. "Master them and the game opens up to you like a great storybook."
 
 ### Teaching Steps
 1. Set up a position using 3 special rules simultaneously — students identify each opportunity.
@@ -745,14 +790,14 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 
 ### Questions to Ask Students
 - "This pawn just moved 2 squares — what can your pawn do right now?"
-- "You want to castle but your King needs to pass through e1 — is e1 attacked? Check before you castle."
-- "This pawn is on d7 — whose turn is it to promote and what should they promote to?"
+- "You want to castle but your King needs to pass through an attacked square — can you castle?"
+- "This pawn is on d7 — what should they promote to and why?"
 - "Count the remaining material — is a draw by insufficient material possible?"
 - "If you repeat this position one more time, what can your opponent claim?"
 
 ### Watch For (Common Mistakes)
 - Missing en passant opportunities — remind students to check for it every time an opponent pawn moves 2 squares.
-- Promoting to anything other than a Queen without good reason — discuss when underpromotion makes sense.
+- Promoting to anything other than a Queen without good reason.
 
 ### Timeline & Homework
 - 5 min – Rules rapid-fire quiz (all rules in 5 minutes)
@@ -767,17 +812,19 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - Highly motivating lesson — students love these quick wins and the "detective" feeling of spotting traps.
 
 ### How to Explain It
-- **Fool's Mate:** The fastest possible checkmate — White plays badly and Black mates in just 2 moves. Shows how fast the game can end without opening principles.
-- **Scholar's Mate (4-move checkmate):** 1.e4 e5 2.Bc4 Nc6 3.Qh5 ... attacking f7. Devastating if Black doesn't know the defence.
+- **Fool's Mate:** The fastest possible checkmate — White plays badly and Black mates in just 2 moves.
+- **Scholar's Mate (4-move checkmate):** 1.e4 e5 2.Bc4 ... Qh5 — attacking the weak f7 square.
 - The defence is simple: develop pieces, don't move the same piece twice, watch for Qh5.
-- These traps prove WHY the opening principles (Session 22) are so important.
+
+### Story
+Two young kings prepared for battle. The White King's general was arrogant and impatient. "I'll open with these flashy pawn moves!" he declared, pushing Pawns to expose his own King recklessly. Within two moves, the Black Queen swooped in for **Fool's Mate** — the shortest checkmate in history! Red-faced, the White general demanded a rematch. This time his opponent's Queen crept toward the weak f7 square with a sinister plan — the **Scholar's Trap**. The White Pieces didn't notice the danger until the Queen shouted "Checkmate!" in just four moves. "How do I stop this madness?" the White King cried. His advisor smiled. "Bring your Knight to f6 to challenge the Queen, or defend with your own pawn. And most importantly — never, EVER expose your King so early in the game."
 
 ### Teaching Steps
-1. Play the Fool's Mate with a student without explaining what you are doing — they are surprised when they win/lose in 2 moves!
+1. Play the Fool's Mate with a student without explaining what you are doing — they are surprised!
 2. Analyse: "What did White do WRONG?" Links to future opening principles.
 3. Demonstrate Scholar's Mate step by step — then defend it.
 4. Students attempt to trap each other; partner must identify and defend.
-5. Discuss: "Is it good chess to only try these traps?" — builds sportsmanship.
+5. Discuss: "Is it good chess to only try these traps?"
 
 ### Questions to Ask Students
 - "Can you tell me what's dangerous about Black's move Qh5?" (before revealing it attacks f7)
@@ -805,14 +852,17 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - Transforms students from "move any piece" to purposeful chess players — this is a huge moment.
 
 ### How to Explain It
-- **Control the centre:** Place pawns or pieces on/near d4,d5,e4,e5 — the most powerful squares.
+- **Control the centre:** Place pawns or pieces on/near d4, d5, e4, e5 — the most powerful squares.
 - **Develop your pieces:** Bring out Knights and Bishops early; don't move the same piece twice without reason.
 - **Castle:** Get your King to safety and connect your Rooks.
-- Memory phrase: "**C-D-C:** Centre, Develop, Castle — always in that mindset."
+- Memory phrase: **CDC** — Centre, Develop, Castle.
+
+### Story
+Before a great battle, General White sat with her commanders and drew up their strategy on a map. "Listen carefully," she said. "**First** — we must control the crossroads at the centre of the battlefield. Whoever holds the centre can attack in any direction." She drew a circle around d4, d5, e4, e5. "**Second** — we bring ALL our warriors forward to strong, active positions. No leaving Bishops asleep in the barracks and Knights standing at the edge of the battlefield!" Her youngest general raised his hand: "And the King, General?" She smiled. "**Castle early.** The King is precious — get him behind walls of Pawns and connect your Rooks for the endgame." The three principles — **Centre, Develop, Castle** — became the war cry of every great chess general. Those who followed them won. Those who ignored them fell for Scholar's Mates and Fool's Mates.
 
 ### Teaching Steps
 1. Ask "What should you do in the first 5 moves of a game?" — let students guess before teaching.
-2. Compare a principled opening (e4, Nf3, Bc4, 0-0) vs unprincipled (h4, a4, Na3, Nh3).
+2. Compare a principled opening vs unprincipled (h4, a4, Na3, Nh3).
 3. Play out 10 moves with ONLY the principles — no tactics, just good development.
 4. Show how breaking principles leads to trouble (Scholar's Mate connection from Session 21).
 5. Students play 5-minute games focusing ONLY on applying CDC — no winning traps allowed.
@@ -825,7 +875,7 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - "Can you develop a piece to a square where it cannot be used effectively?"
 
 ### Watch For (Common Mistakes)
-- Moving the Queen early ("the Queen is the strongest piece, I'll attack!") — demonstrate why this loses time.
+- Moving the Queen early — demonstrate why this loses time.
 - Neglecting to castle — the King stays in the centre and gets attacked.
 - Moving the same pawn multiple times instead of developing new pieces.
 
@@ -838,21 +888,23 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - **Homework:** Play 3 games and in each one, write down your first 10 moves — check: did you follow CDC?`,
 
     23: `### Objective & Outcomes
-- Master checkmate with two Rooks (rolling Rook checkmate) and Queen checkmate against a lone King.
+- Master checkmate with two Rooks (rolling lawnmower) and Queen checkmate against a lone King.
 - Students can: deliver two-Rook checkmate in under 15 moves, apply the Queen+King checkmate reliably without stalemate.
 - Practical endgame skill that decides most beginner games — essential before the final assessment.
 
 ### How to Explain It
-- **Two Rooks ("Lawnmower"):** One Rook cuts off a rank, the other gives check — the King is pushed to the edge row by row like a lawnmower.
+- **Two Rooks ("Lawnmower"):** One Rook cuts off a rank, the other gives check — the King is pushed to the edge row by row.
 - **Queen + King:** Queen controls two rows at once; use the King to drive the enemy King to the edge.
 - Key concept: **Zugzwang** — forcing the opponent into a position where any move makes their position worse.
-- The key to both endings: patience and working row by row — never rush.
+
+### Story
+The two great Rook brothers, Reginald and Roland, had one job: **mow the enemy King** to the edge of the board. "I'll cut off all the squares below rank 5," said Reginald, sliding into position. "Then I'll push him up to rank 4," said Roland, giving check. The Black King had no choice but to retreat. "Rank 5, then rank 4, then rank 3..." — row by row, like two lawnmowers pushing a stubborn piece of grass to the fence, the Black King was driven backward. When he had nowhere left to go, Roland delivered the final CHECK, and the Black King — backed against the last rank with Reginald blocking his escape — was in **Checkmate**. "Two Rooks working together," said Reginald proudly, "are unstoppable. But apart, we can fall into a trap called stalemate — so always coordinate!"
 
 ### Teaching Steps
 1. Demonstrate the lawnmower with two Rooks — show the clean, mechanical pattern.
 2. Students practice 2R+K vs K: can they do it in under 20 moves?
 3. Compare to Q+K checkmate — Queen cuts off larger areas.
-4. Stalemate trap reminder — deliberately show the stalemate danger with the Queen.
+4. Stalemate trap reminder — show the stalemate danger with the Queen.
 5. Tournament: students race to checkmate the lone King; coach times each attempt.
 
 ### Questions to Ask Students
@@ -863,9 +915,9 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - "What's the biggest danger when you're trying to deliver checkmate with the Queen alone?"
 
 ### Watch For (Common Mistakes)
-- Rooks blocking each other — teach students to keep them on different files/ranks working together.
+- Rooks blocking each other — keep them on different files/ranks working together.
 - Moving to the wrong Rook square and allowing the King to approach — trace the King's moves first.
-- Stalemate with the Queen — reinforce: always leave one escape square until the King is cornered.
+- Stalemate with the Queen — always leave one escape square until the King is cornered.
 
 ### Timeline & Homework
 - 5 min – Opening principles warm-up (CDC in 5 moves from memory)
@@ -884,6 +936,9 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - "This is your graduation test — you've come so far from Session 1!"
 - Reassure: "Chess masters never stop learning — this is just the end of the beginning."
 - The final assessment is also a celebration — every student who completes the Beginner level deserves recognition.
+
+### Story
+On the day of the Great Graduation, all the young chess students gathered in the academy's grand hall. Their teacher, the ancient Grandmaster, walked slowly to the front. "When you first arrived," he said, "you didn't know the difference between a Rook and a Bishop, a check and a checkmate, a stalemate and a draw. You didn't know the four ways of protection, the three methods of escaping check, or the golden CDC opening principles." He paused and looked at each student one by one. "Today, you know all of these things — and you know them because you PRACTISED, you made mistakes, and you learned from every one of them. That," he said with a smile, "is the way of the chess student — and the way of life." One by one, the students sat down for their final test, no longer nervous beginners but confident young players ready to begin the next chapter of their chess journey: **Foundation Level 1**.
 
 ### Teaching Steps
 1. Start with 5 minutes of the students' favourite game or warmup from the course.
@@ -905,7 +960,7 @@ export const STATIC_GUIDES: Record<string, Record<number, string>> = {
 - Missing answers due to test nerves — allow verbal answers for students who freeze under written tests.
 
 ### Timeline & Homework
-- 5 min – Favourite warm-up game / activity from the course
+- 5 min – Favourite warm-up game from the course
 - 25 min – Final Assessment (8 positions covering all topics)
 - 10 min – Review and personalised feedback
 - 5 min – Celebration, Foundation 1 preview, and goal-setting
