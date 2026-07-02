@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useEffect, useRef } from 'react'
 import { cn } from '@/lib/utils'
+import { STATIC_GUIDES } from '@/lib/static-coaching-guides'
 
 interface Props {
   level: string
@@ -95,7 +96,11 @@ export default function CoachingGuideDrawer({ level, session, topic, isTest }: P
   const cacheKey = `coaching-guide-v2:${level}:${session}`
 
   const load = useCallback(async () => {
-    // Try localStorage cache first
+    // 1. Check pre-written static guides first (instant, no API)
+    const staticContent = STATIC_GUIDES[level]?.[session]
+    if (staticContent) { setContent(staticContent); return }
+
+    // 2. Try localStorage cache
     try {
       const cached = localStorage.getItem(cacheKey)
       if (cached) { setContent(cached); return }
