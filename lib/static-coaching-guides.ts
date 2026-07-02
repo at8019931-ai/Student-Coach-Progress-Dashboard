@@ -966,4 +966,968 @@ On the day of the Great Graduation, all the young chess students gathered in the
 - 5 min – Celebration, Foundation 1 preview, and goal-setting
 - **Homework:** Play 5 games this week applying everything you learned. Write down one improvement you notice in each game.`,
   },
+
+  'Foundation 1': {
+    1: `### Objective & Outcomes
+- Solidify Beginner knowledge: castling rules, mate-in-1 patterns, and CDC opening principles.
+- Students can: castle correctly under pressure, find a mate-in-1 in 10 seconds, recite CDC from memory.
+- Connects everything learned in Beginner to the tactical work starting in Session 3 — a strong foundation is essential before tactics begin.
+
+### How to Explain It
+- "Think of today as a fitness warm-up — we are sharpening the tools you already have before picking up new ones."
+- **Castling:** King 2 squares, Rook jumps over — only if neither has moved, not through check, not in check.
+- **Mate in 1:** Scan all your pieces, ask "Can any of these give a check that cannot be escaped?"
+- **CDC (Centre, Develop, Castle):** Every opening move should serve at least one of these three goals.
+
+### Story
+A master swordsman never forgets to sharpen his blade before a tournament — no matter how many battles he has won. Young chess champion Priya had completed her Beginner training and was eager to learn powerful new tactics. "Slow down," said her coach. "First, show me your castling. Now find mate in 1. Now play the first 5 moves with CDC." Priya executed each one flawlessly — and felt a deep confidence she hadn't felt before. "Good," said her coach with a nod. "NOW we begin tactics. A solid foundation makes everything that comes next ten times more powerful."
+
+### Teaching Steps
+1. Quick-fire castling quiz: show 6 positions — legal or illegal? Students answer within 5 seconds.
+2. Mate-in-1 speed round: 5 positions, 10 seconds each — students write the move in notation.
+3. Ask "What does CDC stand for?" — students answer, then demonstrate on the board.
+4. Play a practice opening: coach makes a bad opening move, students identify which CDC principle it breaks.
+5. Short game: students play 10 moves applying CDC while coach watches and gives live feedback.
+
+### Questions to Ask Students
+- "Your King has never moved but the Rook has — can you castle on that side?"
+- "CDC says control the centre — which 4 squares are we talking about?"
+- "You have a mate in 1 available but you haven't noticed it. How do you train yourself to always look?"
+- "After castling, where is your Rook? Why is that a better square than the corner?"
+- "Name one CDC principle that was BROKEN in this opening. What should White have played instead?"
+
+### Watch For (Common Mistakes)
+- Forgetting the King cannot castle through an attacked square — trace the path carefully.
+- Missing mate-in-1 because students scan pieces in the wrong order — suggest starting with the Queen.
+- Playing CDC mechanically (moving a centre pawn twice "because CDC") — CDC is a guide, not a rigid rule.
+
+### Timeline & Homework
+- 5 min – CDC from memory: students write it out without looking
+- 12 min – Castling legal/illegal speed quiz (6 positions)
+- 12 min – Mate-in-1 speed round (5 positions)
+- 10 min – Opening game with CDC focus
+- 6 min – Recap: what are we learning NEXT session? (Preview: endgame checkmates)
+- **Homework:** Play 3 games and in each one, castle within the first 10 moves. Write down which move you castled on.`,
+
+    2: `### Objective & Outcomes
+- Revise and master Queen checkmate, two-Rook (lawnmower) checkmate, and Rook+King checkmate.
+- Students can: deliver all three checkmate types reliably, avoid stalemate in every scenario.
+- Closes out the endgame fundamentals chapter before pure tactics begins in Session 3.
+
+### How to Explain It
+- **2 Rooks (Lawnmower):** Alternating Rooks cut off ranks one by one — like mowing grass from one end to the other.
+- **Queen + King:** Queen controls two rows at once; King drives the enemy King to the edge.
+- **Key danger:** Never leave the enemy King with NO safe squares AND not in check — that's stalemate (a draw!).
+- **Speed goal:** Foundation 1 students should be able to force these checkmates in under 20 moves.
+
+### Story
+Two veteran Rook generals, Reginald and Roland, had a famous drill. "I cut off rank 5," said Reginald, placing his Rook perfectly. "I give check and push him to rank 4," replied Roland. Back and forth they went — rank by rank — until the Black King was trapped on the back rank with nowhere to run. Meanwhile, the mighty Queen practised her solo waltz with the King: box in, step together, close in, CHECKMATE. "The secret," said the old King watching them train, "is coordination and patience. Rush it and you will stalemate. Be too slow and the opponent finds a trick. Flow together like a river finding the sea."
+
+### Teaching Steps
+1. Demo the two-Rook lawnmower slowly — narrate each move aloud.
+2. Students race: who can deliver 2R checkmate in the fewest moves? (Target: under 15)
+3. Demo Q+K checkmate with the stalemate avoidance technique.
+4. Students practice Q+K — coach deliberately creates stalemate traps to see if students notice.
+5. Timed challenge: checkmate in under 2 minutes — pressure adds to the learning.
+
+### Questions to Ask Students
+- "Your two Rooks are on a1 and a2 — the Black King is on e5. What is your first move?"
+- "The Black King has one square to move to — but it's not in check. What do you do?"
+- "You're about to move your Queen to give checkmate — but wait, is the Black King actually in check?"
+- "After delivering 2R checkmate, can you convert the same position using only a Queen?"
+- "Why do you always want the enemy King on the EDGE of the board, not the centre?"
+
+### Watch For (Common Mistakes)
+- Stalemate — still the #1 error; reinforce: always leave one safe square until ready to mate.
+- Rooks blocking each other (both on the same rank/file) — keep them on separate lines.
+- Using the Queen to give pointless checks instead of shrinking the King's space methodically.
+
+### Timeline & Homework
+- 5 min – Warm-up: stalemate vs checkmate — can students tell the difference in 3 positions?
+- 15 min – Two-Rook lawnmower practice (race format)
+- 15 min – Q+K vs lone K practice with stalemate traps
+- 10 min – Mixed drill: coach gives a random endgame position, students identify which technique to use
+- **Homework:** Complete the Lichess endgame trainer for 2R vs K and Q vs K — 5 consecutive successes each.`,
+
+    3: `### Objective & Outcomes
+- Understand the **Pin**: a piece cannot or should not move because it would expose a more valuable piece behind it.
+- Students can: identify an absolute pin (illegal to move) and a relative pin (costly to move), use pins to win material.
+- The Pin is one of the most common and powerful tactics in chess — mastering it unlocks dozens of patterns.
+
+### How to Explain It
+- **Absolute Pin:** A piece is pinned to the King — it CANNOT legally move (would expose the King to check).
+- **Relative Pin:** A piece is pinned to a valuable piece (Queen, Rook) — it CAN move but it's a bad idea.
+- **How to create a pin:** Align your long-range piece (Bishop, Rook, Queen) with an enemy piece and a more valuable piece behind it.
+- **How to exploit a pin:** Attack the pinned piece repeatedly — it cannot defend itself by moving!
+
+### Story
+General Bishop set up perfectly behind enemy lines, her diagonal aimed straight through a Black Knight and into the enemy Queen. The Knight desperately wanted to jump away and attack, but he was frozen — **pinned** to the Queen behind him. "If you move," whispered Bishop, "I take your Queen." The Knight stood still, helpless and fuming. Meanwhile, White brought Pawn forward and then another piece — attacking the pinned Knight again and again. The Knight could do nothing. "A pinned piece," said the Bishop with quiet satisfaction, "is a sleeping soldier — powerful in name, useless in battle."
+
+### Teaching Steps
+1. Set up a simple absolute pin on the King — ask "Can this Knight move? Why not?"
+2. Set up a relative pin on the Queen — ask "Can this Bishop move? Should it?"
+3. Show how to EXPLOIT a pin: pile up attackers on the pinned piece.
+4. Show how to ESCAPE a pin: interpose a piece, move the valuable piece away, or capture the pinning piece.
+5. Puzzle drill: 5 pin positions — students identify the pin and find the best continuation.
+
+### Questions to Ask Students
+- "This Bishop is pinned to the King — what type of pin is this? Can the Bishop legally move?"
+- "There is a relative pin on your Knight. Your opponent attacks it with a Pawn. What do you do?"
+- "How many times can you attack a pinned piece before it runs out of defenders?"
+- "What are the 3 ways to escape a pin?"
+- "Can a Pawn create a pin? How?"
+
+### Watch For (Common Mistakes)
+- Moving a piece that is absolutely pinned — students sometimes do this; stop and explain clearly.
+- Not recognising relative pins — students move the pinned piece and lose the valuable piece behind it.
+- Missing the opportunity to exploit a pin by piling up attackers.
+
+### Timeline & Homework
+- 5 min – Warm-up: quick mate-in-1 from Session 2
+- 8 min – Introduce absolute pin with 2 clear examples
+- 8 min – Introduce relative pin with 2 examples
+- 12 min – Exploit the pin: attack and re-attack puzzles
+- 10 min – Mixed pin puzzles (find the pin, name the type, find the best move)
+- 7 min – Mini game with pin awareness
+- **Homework:** Find 10 "Pin" puzzles on Lichess and solve them. Note whether each is absolute or relative.`,
+
+    4: `### Objective & Outcomes
+- Understand the **Skewer**: the opposite of a pin — a valuable piece is attacked, it moves, and a less valuable piece behind it is captured.
+- Students can: set up a skewer with Bishops, Rooks, and the Queen; distinguish a skewer from a pin.
+- Skewers are a key tactic that beginners often miss — they win material in endgames and middlegames alike.
+
+### How to Explain It
+- **Skewer = reversed pin.** In a pin, the MORE valuable piece is behind. In a skewer, the MORE valuable piece is IN FRONT — and must move, exposing what's behind.
+- Classic skewer: Queen attacks enemy Queen → enemy Queen moves → your Queen takes the Rook that was behind.
+- The attacker forces the move — the opponent has no choice but to "skewer" themselves.
+
+### Story
+Sheriff Rook rode into town and spotted the Black Queen standing in front of a Black Rook in a long straight alley. "Move aside, Your Majesty!" boomed the Rook, aiming straight down the alley. The Black Queen was far too important to stay and take the hit — she hurried sideways to safety. But the moment she moved, the White Rook galloped past her and took the Black Rook that had been hiding behind. "Gotcha!" said the White Rook triumphantly. The Black army groaned. They had been **skewered** — forced to move their most important piece, only to lose the piece that was sheltering behind it.
+
+### Teaching Steps
+1. Contrast the pin and skewer side by side on the board — students spot the difference.
+2. Show 3 skewer types: Rook skewer (straight), Bishop skewer (diagonal), Queen skewer.
+3. Setup puzzle: place pieces so a skewer is possible — students find the skewering move.
+4. King skewers: King in front of a Rook → skewer the King → take the Rook. Very common in endgames.
+5. Mixed drill: 5 positions — is it a pin or a skewer? Students identify and find the tactic.
+
+### Questions to Ask Students
+- "What is the difference between a pin and a skewer? Which piece is in front?"
+- "The White Rook is on a1, Black King is on a5, and a Black Rook is on a8 — what tactic is this?"
+- "After you skewer the King and it moves, where do you capture and what do you win?"
+- "Can a Knight create a skewer? Why or why not?"
+- "In an endgame, your Bishop is aiming at the enemy King with a Rook behind it — what do you play?"
+
+### Watch For (Common Mistakes)
+- Confusing pin and skewer — run through the distinction again: valuable piece IN FRONT = skewer.
+- Choosing the wrong piece to skewer with — only long-range pieces (Bishop, Rook, Queen) can skewer.
+- Missing skewers in endgames — this is where they are most common; specifically King+Rook formations.
+
+### Timeline & Homework
+- 5 min – Warm-up: 3 pin puzzles from last session (revision)
+- 8 min – Pin vs Skewer comparison: side-by-side on the board
+- 10 min – Skewer with each piece type (Rook, Bishop, Queen)
+- 10 min – King skewer endgame positions
+- 10 min – Mixed pin/skewer drill: identify and solve
+- 7 min – Game with pin/skewer hunting
+- **Homework:** Find 5 "Skewer" puzzles on Lichess. After solving, write down which piece delivered the skewer.`,
+
+    5: `### Objective & Outcomes
+- Understand the **Double Attack (Fork)**: one piece simultaneously attacks two enemy pieces.
+- Students can: identify double attacks with every piece type, set up a double attack deliberately, escape or avoid being forked.
+- The double attack is the most common winning tactic in beginner and intermediate games — every chess player must master it.
+
+### How to Explain It
+- **Double Attack / Fork:** One move that creates TWO threats simultaneously. The opponent can only deal with one — you win the other.
+- Any piece can create a double attack — even a Pawn!
+- The most powerful form: attack the King (check) AND another piece at the same time — the opponent MUST deal with the check first.
+
+### Story
+The white Pawn tiptoed to e6 — and suddenly two alarms went off at once. "I'm attacking the Black Rook on f7!" the Pawn announced. "And I'm attacking the Black Bishop on d7 too!" The Black general stared at the board in disbelief. No matter which piece he saved, the other would be captured for free. It was a **double attack** — a simple Pawn creating chaos for the entire enemy army. "One soldier, two victories," said the Pawn cheerfully. "That is the magic of the fork." The Black general had learned a painful lesson: always check if your opponent's move creates TWO threats at once, because answering just ONE means losing the other.
+
+### Teaching Steps
+1. Show a Pawn fork first — it's the most surprising and memorable.
+2. Show a Queen double attack (very common) and a Rook double attack.
+3. Show a "check-plus-attack" double: the most powerful type (opponent must respond to check).
+4. Puzzle: set up a position where a double attack is possible — students find the forking square.
+5. Game: students score a bonus point every time they create (or avoid) a double attack.
+
+### Questions to Ask Students
+- "What makes a double attack different from a regular attack?"
+- "Your Queen can move to d5 and attack two pieces. Which two? Which one will you win?"
+- "Why is a double attack with a CHECK especially powerful?"
+- "You notice your Rook is about to be forked — what can you do to avoid it?"
+- "Can a King create a double attack? In what situation?"
+
+### Watch For (Common Mistakes)
+- Students playing a double attack but the forking piece itself is unprotected and can be taken for free.
+- Missing the "check-plus-attack" version — remind students to always check if a check creates a second threat.
+- Not spotting that their own pieces are vulnerable to being forked.
+
+### Timeline & Homework
+- 5 min – Warm-up: skewer vs pin identification from last sessions
+- 10 min – Double attack with Pawn, Queen, Rook (show each type)
+- 10 min – Check + attack double attack examples
+- 12 min – Find-the-fork puzzle positions (6 puzzles)
+- 10 min – Mini game with "double attack bonus point" rule
+- 8 min – "How could this have been avoided?" — analyse each puzzle from the defender's view
+- **Homework:** Solve 10 "Fork" puzzles on Lichess (select "Fork" theme). Write down WHICH piece delivered each fork.`,
+
+    6: `### Objective & Outcomes
+- Master the **Knight Fork**: a Knight attacks two (or more) pieces simultaneously, often including the King.
+- Students can: find the Knight fork square in a position, set up a Knight fork deliberately, avoid leaving pieces en prise to a fork.
+- The Knight fork is the most exciting and surprising tactic — students love it and it appears in nearly every game.
+
+### How to Explain It
+- A **Knight fork** is a double attack by the Knight — it jumps to a square and attacks two pieces at once.
+- The most powerful: Knight forks the **King and Queen** (called a "Royal Fork") — you win the Queen!
+- How to set one up: look for a square where the Knight can reach that attacks two valuable enemy pieces.
+- Remember the Knight's 8 possible squares from any position — the fork square is always one of those 8.
+
+### Story
+Sir Knight was the court jester of the chess kingdom — always jumping over walls, landing in unexpected places, making everyone laugh. But today he was deadly serious. He spotted a magical square: if he leapt there, he would point his lance at the enemy King on one side AND the enemy Queen on the other. He jumped. "CHECK!" The enemy King had to run — and the moment it moved, Sir Knight reached out and took the Queen. The crowd gasped. The enemy general slammed the table. "How did a jumping horse beat my Queen?!" he roared. "With geometry," winked Sir Knight. "I just found the right square."
+
+### Teaching Steps
+1. Draw the Knight's 8 possible landing squares from any position — always visualise all 8.
+2. Show 2 simple Royal Forks (King + Queen) — students identify the fork square.
+3. Show Knight forks on Rooks, and Knight + two Rooks forks (win one Rook).
+4. Set-up puzzle: pieces are placed so a fork is ONE MOVE away — students move a piece to create the fork opportunity.
+5. Speed drill: 8 positions, 20 seconds each — find the Knight fork.
+
+### Questions to Ask Students
+- "The Knight is on d4 — list all 8 squares it can jump to."
+- "The enemy King is on e8 and the Queen is on g7 — is there a Knight fork? Where?"
+- "You see a Knight fork but the fork square is defended by a Pawn — what do you do first?"
+- "How do you prevent your own King and Queen from being forked?"
+- "Can a Knight fork THREE pieces at once? Can you set up a position where that happens?"
+
+### Watch For (Common Mistakes)
+- Students jumping to the fork square before checking if the landing square is defended — the forking Knight gets captured!
+- Not seeing all 8 Knight moves — students often miss the "awkward" L-shapes; force them to list all 8.
+- Forgetting that the fork must give CHECK to guarantee winning a piece (otherwise the opponent saves both).
+
+### Timeline & Homework
+- 5 min – Warm-up: find a double attack from Session 5
+- 8 min – Knight's 8 squares visualisation drill (from 3 different positions)
+- 12 min – Royal Fork puzzles (King + Queen) — 4 positions
+- 12 min – Other Knight fork puzzles (Rook, Bishop targets)
+- 10 min – Speed drill: 8 fork positions, 20 seconds each
+- **Homework:** Find 10 "Knight Fork" puzzles on Lichess. For each one, write the Knight's fork square in notation (e.g., "Nf7+").`,
+
+    7: `### Objective & Outcomes
+- Learn **Discovered Check** (moving a piece to reveal a check from behind) and **Double Check** (both the moved piece AND the revealed piece give check simultaneously).
+- Students can: identify a discovered check in a position, find a double check, understand why double check can only be answered by moving the King.
+- These are among the most powerful attacking weapons in chess — a double check is almost always devastating.
+
+### How to Explain It
+- **Discovered Check:** Piece A moves (for ANY reason), revealing Piece B behind it — which gives check. The moved piece can also attack or capture while revealing the check!
+- **Double Check:** Piece A moves AND gives check while simultaneously revealing Piece B's check. Two pieces checking at once — the only escape is to MOVE the King (you cannot block or capture both).
+
+### Story
+The White Bishop had been hiding behind a White Rook, planning something spectacular. On a quiet Tuesday, the Bishop slid sideways — and BOOM! The Rook behind him was suddenly pointing straight at the Black King. "Discovered Check!" roared the battlefield. The Black King scrambled. But in the next position, the Bishop didn't just slide — he moved to a square where HE also gave check at the same moment as the Rook. The Black general grabbed his head: "I can't block both! I can't capture both! My King must RUN!" Double check — the nuclear option of chess tactics. "Two attackers at once," said the Bishop with a flourish, "and only the King can answer."
+
+### Teaching Steps
+1. Set up a discovered check position — show how ANY move of Piece A reveals check.
+2. Show how the moved piece can also make a useful threat (capture a piece, give check, or even promote).
+3. Escalate to a double check — show that ONLY the King move is a valid escape.
+4. Windmill puzzle (bonus): a series of discovered checks and direct checks alternating — devastating pattern.
+5. Puzzle drill: 5 discovered check + 3 double check positions.
+
+### Questions to Ask Students
+- "Piece A moves to reveal a check — can Black block the check? Why can it sometimes and sometimes not?"
+- "In a double check, why can't Black capture the checking piece?"
+- "Your Bishop is behind your Queen, pointing at the enemy King — what does the Bishop do to create a discovered check?"
+- "What makes a discovered check especially dangerous compared to a regular check?"
+- "Can you create a discovered check where the moving piece ALSO gives check? What do we call that?"
+
+### Watch For (Common Mistakes)
+- Students forgetting to think about what the MOVING piece can do — it's often the key to the tactic.
+- Not realising double check forces a King move — students try to block or capture one checker.
+- Missing discovered checks because they only look at moving pieces that directly attack.
+
+### Timeline & Homework
+- 5 min – Warm-up: Knight fork speed drill from Session 6
+- 10 min – Discovered check: demonstrate and identify (3 positions)
+- 12 min – How to use the moving piece to add extra threats
+- 10 min – Double check: demonstrate why only the King can escape
+- 10 min – Mixed discovered/double check puzzle drill
+- 8 min – Create your own: students set up a discovered check on their boards
+- **Homework:** Find 8 "Discovered Check" puzzles on Lichess. For 3 of them, describe in words why the tactic works.`,
+
+    8: `### Objective & Outcomes
+- Formal Test 1: assess Pin, Skewer, Double Attack, Knight Fork, Discovered Check, and Double Check.
+- Coach identifies each student's strongest and weakest tactical patterns for targeted follow-up.
+- Reinforce: tactics are patterns — the more you see them, the faster you recognise them.
+
+### How to Explain It
+- "Today is a checkpoint — not to see if you are clever, but to see which patterns are already in your chess brain and which ones need more practice."
+- Reassure: every missed tactic is simply a pattern you haven't seen enough times yet.
+
+### Story
+The young tactician Arjun sat down for his first real tactics test. Five sessions of patterns — pins, skewers, forks, discovered checks — had flashed through his mind like a highlight reel. "Which one is this?" he thought, studying the first position. A Rook and a Queen were lined up — *skewer!* He wrote down the move confidently. The next was trickier — a Knight on the rim, two targets. He counted the 8 possible squares carefully. *Fork.* He found it. Not every position was easy, but each one felt familiar, like a face he had seen before in a dream. "Tactics," his coach had said, "are just patterns. And you have already seen all of these patterns."
+
+### Teaching Steps
+1. Calm start: one easy warm-up puzzle from each tactic type before the test begins.
+2. Test: 6 positions (one per tactic: pin, skewer, double attack, Knight fork, discovered check, double check).
+3. Students work independently — 5 minutes per position is generous, less is fine.
+4. After test: pair up and explain answers to each other.
+5. Coach reviews each position on the demonstration board — celebrate all correct answers.
+
+### Questions to Ask Students (post-test)
+- "Which tactic felt most natural? Which felt unfamiliar?"
+- "For the Knight fork — did you list all 8 squares first?"
+- "In the discovered check — what did the moving piece do besides reveal the check?"
+- "What is the ONE thing you will practise most before Test 2?"
+- "Can you explain the difference between a pin and a skewer in one sentence?"
+
+### Watch For (Common Mistakes)
+- Rushing through without checking all candidate moves — enforce "pause and look before writing."
+- Students getting discouraged by wrong answers — celebrate the analysis, not just correct results.
+
+### Timeline & Homework
+- 5 min – Warm-up: one puzzle per tactic type (6 puzzles, 30 seconds each)
+- 25 min – Test (6 positions, guided pacing)
+- 10 min – Partner explanation and self-check
+- 5 min – Coach review and celebration
+- **Homework:** Revisit any tactic you missed in the test. Solve 5 puzzles of THAT specific type on Lichess today.`,
+
+    9: `### Objective & Outcomes
+- Mixed "Mate in 1" practice: checkmates from all angles using all piece types on more complex boards.
+- Students can: find mate-in-1 in 15 seconds with pieces and pawns of both colours on the board, distinguish check from checkmate confidently.
+- Builds pattern recognition for Session 14's mate-in-2 and Session 23's sacrifice-to-mate concepts.
+
+### How to Explain It
+- "Mate in 1 is a reflex — by Foundation 1, it should be instant. Today we build that reflex."
+- Method: look at all checks → for each check, ask "can the King escape? Can it capture my piece? Can it be blocked?" If NO to all three — it's checkmate.
+- On a full board, more escape routes exist — be systematic.
+
+### Story
+Grandmaster Rekha could find mate-in-1 in 3 seconds flat. Her students couldn't understand how. "It's simple," she said. "I don't see a position — I see CHECKS. Every time I look at the board, the first thing my eyes search for is: can I give check? Then I ask: can they escape? Can they block? Can they capture?" She flipped through 10 positions in 30 seconds, calling out the mates instantly. Her secret was practice — she had seen thousands of mate-in-1 positions. Each new one reminded her of old patterns. "The thousandth puzzle," she told her students, "takes one second. The first hundred puzzles each take a minute. Do the hundred, and the thousand comes free."
+
+### Teaching Steps
+1. Show a mate-in-1 solved in 3 steps: find checks → test escape → test block → test capture.
+2. Speed round 1: 5 simple positions (single piece giving mate) — 10 seconds each.
+3. Speed round 2: 5 medium positions (full board, tactical setup) — 20 seconds each.
+4. Hard round: 3 positions where the mating piece must first be moved INTO position in one move.
+5. "Trick" round: 2 positions that look like mate but aren't — why is it check, not checkmate?
+
+### Questions to Ask Students
+- "What is the THREE-step checklist you run through for every potential mating move?"
+- "This looks like mate — but can the King capture your piece? Is your piece protected?"
+- "Is it checkmate or just check? How do you know for sure?"
+- "Which piece type gives checkmate most often in your puzzles? Why do you think that is?"
+- "If you can't find mate in 1, what should you do next — give up or look differently?"
+
+### Watch For (Common Mistakes)
+- Giving check instead of checkmate — trace every King escape square before claiming it's mate.
+- Missing mate because the mating piece appears to be on a "bad" square — don't dismiss any check.
+- Students checking only with "big" pieces — remind them a Pawn checkmate is just as valid.
+
+### Timeline & Homework
+- 5 min – Test 1 review: revisit one position each student found hardest
+- 10 min – 3-step mate process walkthrough
+- 15 min – Three speed rounds (easy → medium → hard)
+- 10 min – Trick positions (check vs checkmate)
+- 5 min – Personal best: who improved their speed from the start of class to the end?
+- **Homework:** Complete 20 "Mate in 1" puzzles on Lichess. Time yourself and try to beat your average by the end.`,
+
+    10: `### Objective & Outcomes
+- Learn common **opening traps**: positions where bad moves in the opening allow quick material gain or checkmate.
+- Students can: recognise the most common opening traps (Noah's Ark Trap, Legal's Trap, fishing pole), exploit them when opponents fall in, avoid falling for them.
+- Combines opening principles (CDC) with tactical awareness — bad opening play is immediately punishable.
+
+### How to Explain It
+- An **opening trap** = a tempting but bad move in the opening that leads to losing material or being checkmated.
+- The opponent breaks an opening principle → we punish it tactically.
+- **Key mindset:** Every bad opponent move is an opportunity — ask "how do I punish this?"
+
+### Story
+The new student called Harry played the same trick every game: he pushed his Queen out early, threatening Scholar's Mate. "Ha!" he thought. "Nobody ever stops me!" Then he faced experienced player Mia. She calmly placed her Knight on f6, blocking the Queen's diagonal. Harry retreated. Mia developed another piece. Harry tried another early Queen move. Mia saw a pin emerging and placed her Bishop. Harry moved the Queen again — one too many times — and suddenly Mia had a discovered check that won the Queen entirely. "Opening traps work against inexperienced players," said their coach. "Against experienced players, breaking the rules in the opening just means getting punished by someone who knows what they're doing."
+
+### Teaching Steps
+1. Open with Scholar's Mate — defend it perfectly and then exploit the resulting bad position.
+2. Show the Legal Trap (Queen sacrifice leading to checkmate) — students are amazed.
+3. Show the Noah's Ark Trap: the Ruy Lopez Pawn trap that wins a Bishop.
+4. For each trap: show the WRONG move (falls for it) and the RIGHT move (avoids/punishes it).
+5. Game: one student tries to set a trap, the other tries to identify and punish the bad opening move.
+
+### Questions to Ask Students
+- "White just moved Qh5 on move 2. What opening principle did they break? How do we punish it?"
+- "In the Legal Trap, White sacrifices the Queen — why does Black lose even though they take the Queen?"
+- "What is the signal that your opponent has played a bad opening move?"
+- "Why is the c3-square Bishop in the Ruy Lopez under threat? How does the trap work?"
+- "Can YOU set a trap for your opponent in the opening? What bad move would you be hoping they play?"
+
+### Watch For (Common Mistakes)
+- Students only learning the "trap" but not understanding why it works — always explain the underlying tactic.
+- Falling for the trap themselves when the opponent plays the right moves — traps only work against bad play.
+
+### Timeline & Homework
+- 5 min – Warm-up: CDC principles quiz
+- 10 min – Scholar's Mate defence and punishment
+- 12 min – Legal Trap: demonstration and walk-through
+- 10 min – Noah's Ark Trap: Ruy Lopez Pawn trap
+- 10 min – Partner game: set a trap, identify and punish
+- 8 min – "Which principles were broken?" analysis
+- **Homework:** Look up one opening trap you haven't seen before and teach it to your coach or a friend next session.`,
+
+    11: `### Objective & Outcomes
+- Learn **Defence against Mate**: how to identify a mating threat and stop it before it happens.
+- Students can: spot a checkmate threat 1 move in advance, choose the best defensive move, distinguish between blocking, capturing, and counter-attacking.
+- The flip side of attacking — strong defenders think about threats BEFORE they arrive.
+
+### How to Explain It
+- "After every opponent move, ask: is there a mate threat? If yes, STOP IT before anything else."
+- **3 ways to stop a mate threat:** (1) Block the mating piece's path, (2) Capture the mating piece, (3) Counter-attack (if your counter-threat is faster or also forces checkmate).
+- Priority rule: if your opponent threatens checkmate in 1, it is ALWAYS the priority — even if you could win material.
+
+### Story
+"CHECK!" called the enemy Queen, swooping into position. Young defender Leila stared at the board. "She's not giving check yet," Leila thought carefully, "but she's threatening checkmate on my back rank next move. If I just advance this Pawn, I miss the threat and I lose." Leila paused. "What are my options? I can move my Rook to stop the Queen's entry square. Or I can capture her. Or..." — her eyes lit up — "I can check HIS King and force a trade that removes the threat!" She chose the counter-attack. The enemy Queen disappeared, the mate threat evaporated, and Leila was left with a winning position. Defence, she had learned, was not about cowering — it was about thinking ahead.
+
+### Teaching Steps
+1. Show a position where mate is threatened next move — students must spot it BEFORE making any other move.
+2. Drill: "Find the mate threat in this position" — not the best attacking move, just the threat first.
+3. For each threat, show all 3 defensive options — students vote on which is best.
+4. Show a case where counter-attacking is better than passive defence.
+5. Mixed practice: some positions have immediate mate threats, some don't — students must decide which before acting.
+
+### Questions to Ask Students
+- "What is the first question you ask after your opponent moves?"
+- "Your opponent threatens checkmate in 1 — but you see a winning tactic. Which do you do first?"
+- "There are two ways to stop this mate threat — one blocks, one captures. Which is better and why?"
+- "Is counter-attacking always an option? What do you need to be careful about?"
+- "How do you develop the habit of always checking for mate threats before your move?"
+
+### Watch For (Common Mistakes)
+- Playing a "nice" move without checking for mate threats — students walk into checkmate they could have prevented.
+- Over-defending: spending two moves to stop a threat that only needed one.
+- Missing the counter-attack option — students default to passive defence when counter-play was available.
+
+### Timeline & Homework
+- 5 min – Warm-up: quick mate-in-1 to stay sharp
+- 10 min – "Spot the mate threat" drill (6 positions — identify the threat only)
+- 12 min – For each threat: find all 3 defensive options
+- 10 min – Counter-attack positions: when is attack better than defence?
+- 10 min – Mixed: mate threat or not? Students scan each position
+- **Homework:** After each game this week, look back and find one move where your opponent threatened checkmate. Did you see it? Did you stop it? Write it down.`,
+
+    12: `### Objective & Outcomes
+- Learn to **punish bad opening moves**: recognise when the opponent has broken an opening principle and win material or create a decisive advantage.
+- Students can: identify which opening principle was broken, formulate a concrete punishment, execute the tactical or positional refutation.
+- Turns opening knowledge into practical weapons — CDC becomes offensive, not just defensive.
+
+### How to Explain It
+- The 3 opening sins: (1) Moving the same piece twice without reason, (2) Bringing the Queen out too early, (3) Neglecting King safety (not castling when under attack).
+- When an opponent commits a sin, the punishment is usually tactical: a fork, pin, skewer, or mate threat.
+- **Template:** Identify the sin → find the weakness it created → exploit it immediately.
+
+### Story
+Prince Pawn proudly moved his Queen to h4 on move 2. "Look how threatening I am!" he boasted. Experienced Knight on f6 just smiled. The early Queen move had violated CDC — "Don't bring the Queen out early," every chess teacher said. Knight jumped to f6, attacking the Queen. The Queen retreated to g3. Now a Pawn pushed to d5, gaining space AND attacking the Queen again. Another retreat. With each Queen move, Black developed a new piece. By move 6, Black had four pieces developed, the King was safely castled, and the White Queen was exhausted from running away. "Your Queen spent 4 moves going nowhere," said Knight. "I used those 4 moves to build an army. You brought a dancer to a war."
+
+### Teaching Steps
+1. Show a game where White plays Qh5 early — demonstrate the exact punishing moves.
+2. Show a game where White moves the f-Pawn early, weakening the King — Black punishes with a direct attack.
+3. Show a game where White moves the same Knight twice unnecessarily — Black develops faster and controls the centre.
+4. For each example: name the sin, then find the punishment.
+5. Students create "bad opening" positions for their partner to punish.
+
+### Questions to Ask Students
+- "White moved the Queen to h5 on move 2. Which CDC principle did they break? How do you punish it?"
+- "Your opponent has moved the f-Pawn, g-Pawn, AND h-Pawn in the opening. What weakness does this create?"
+- "They've moved their Knight three times to get it to a 'better' square. What advantage do you have?"
+- "You see a way to win a Pawn immediately but it breaks CDC. Should you take the Pawn or follow CDC?"
+- "What is the connection between opening principles and tactics?"
+
+### Watch For (Common Mistakes)
+- Students punishing correctly but breaking their own CDC in the process — play principled chess while punishing.
+- Being too subtle — against a bad opening, the punishment should be concrete and immediate.
+
+### Timeline & Homework
+- 5 min – Warm-up: name the three opening sins
+- 12 min – Punish the early Queen: walk through 3 positions
+- 12 min – Punish weakened King safety: 2 positions with direct attacks
+- 10 min – Punish loss of development: 2 positions
+- 10 min – Partner game: "bad move on purpose" and punish it
+- **Homework:** In your next 3 games, after each game review moves 1-10. Did your opponent commit an opening sin? Did you punish it? What could you have done?`,
+
+    13: `### Objective & Outcomes
+- Learn the **Back-Rank Mate**: checkmate delivered by a Rook or Queen on the first or last rank when the King is trapped behind its own Pawns.
+- Students can: spot a back-rank mate threat, deliver back-rank mate, defend against it (creating a luft square).
+- Back-rank mate is one of the most common winning patterns in club chess — it appears in games at every level.
+
+### How to Explain It
+- **Back-Rank Mate:** The King is castled and sheltered behind Pawns on the back rank. A Rook or Queen invades the back rank and delivers checkmate because the Pawns block the King's own escape squares.
+- **Luft:** Moving a Pawn (usually h3, g3, or h6/g6) to give the King an escape square — the essential defence.
+- **Doubling Rooks:** Two Rooks on the same file is often the set-up for a back-rank invasion.
+
+### Story
+The White King felt completely safe behind his three Pawns — h2, g2, f2 — like a cosy fortified castle. He had forgotten, though, that his own Pawns were both his shield AND his prison. The Black Rook slid quietly to e8. Then to e1. "CHECK!" The White King stared left and right — h2 blocked him, g2 blocked him, f2 blocked him. His own soldiers had trapped him! There was no escape. "Back-rank mate," said Black calmly. The White King sighed. "If only I had moved one Pawn forward — just one — to give myself a breath of air." The Pawn on h3 that he'd never bothered to push would have saved his life. Chess players call it **luft** — German for "air." A King without air cannot live long.
+
+### Teaching Steps
+1. Set up the classic back-rank mate — show why the Pawns on the second rank trap the King.
+2. Ask "What ONE move would have prevented this?" — introduce luft (h3/g3 or h6/g6).
+3. Show a two-move back-rank mate: first clear a piece off the back rank, then deliver mate.
+4. Intermediate puzzle: defend the back rank with your Rook, then counter-attack.
+5. Drill: 5 back-rank mate puzzles — students find the mating move. 2 puzzles where they must PREVENT it.
+
+### Questions to Ask Students
+- "The enemy Rook is on e8 and your King is on g1 behind f2, g2, h2 — what happens if you play Rxe1?"
+- "What is 'luft' and when should you create it?"
+- "Your opponent doubles Rooks on the e-file — what should you immediately check?"
+- "Can a Queen give back-rank mate just as well as a Rook?"
+- "If the back rank is under threat but you see a way to win a piece — do you take the piece first?"
+
+### Watch For (Common Mistakes)
+- Students not noticing back-rank threats when calculating — always check the back rank after any Rook move.
+- Creating luft at the wrong moment (wasting a tempo when better moves exist early on).
+- Delivering what they think is back-rank mate but the King has an escape through a piece gap.
+
+### Timeline & Homework
+- 5 min – Warm-up: mate-in-1 speed round
+- 10 min – Back-rank mate demonstration and explanation of luft
+- 12 min – Find-the-back-rank-mate puzzles (5 positions)
+- 10 min – Defend against back-rank mate (2 positions + luft discussion)
+- 10 min – Game with attention to back-rank threats
+- 8 min – When to create luft: timing discussion
+- **Homework:** Find 10 "Back Rank Mate" puzzles on Lichess. Note in which ones the luft square could have saved the losing King.`,
+
+    14: `### Objective & Outcomes
+- Learn **Checkmate in 2 moves**: calculate one move ahead to set up the unstoppable mate.
+- Students can: find mate-in-2 in simple positions, identify the first move (usually setting up the second), calculate that the opponent's responses don't prevent the mate.
+- The bridge from pattern recognition (mate in 1) to calculation (look ahead) — a critical skill leap.
+
+### How to Explain It
+- **Mate in 2 = a plan:** Move 1 sets up an unstoppable threat. Move 2 delivers the checkmate.
+- The key question for Move 1: "After I play this, can my opponent stop the mate?" If NO → you have a forced mate in 2.
+- **Process:** Find all the opponent's possible responses to Move 1 → show the mate works against ALL of them.
+
+### Story
+The chess problem composer showed her student two positions side by side. "This is mate in 1," she said. "You see the move immediately." The student nodded. "Now this," she said, placing pieces in a second position. "This is mate in 2. You cannot see the second move yet — but that's the point. Your job is to find Move 1 so that no matter what Black plays, Move 2 is always checkmate." The student stared, then gasped. "Move 1 is a quiet move — it doesn't give check at all!" The composer smiled. "Exactly. The most dangerous first move in a mate-in-2 is often a quiet move that your opponent cannot answer. Black can shuffle any piece they like — but the wall is already closing in."
+
+### Teaching Steps
+1. Show a mate-in-2 where Move 1 is a direct threat — students find both moves.
+2. Show a mate-in-2 where Move 1 is a "quiet" non-checking move — harder to find.
+3. Show how to check ALL opponent responses: "If Black plays Ke8 — mate by...? If Black plays Kc8 — mate by...?"
+4. Puzzle drill: 4 mate-in-2 positions. Start simple, escalate to medium.
+5. Create your own: students set up a mate-in-2 for their partner to solve.
+
+### Questions to Ask Students
+- "What is the process for finding a mate in 2? Walk me through it step by step."
+- "You found Move 1 — now check every Black response. Does your Move 2 work against all of them?"
+- "Why is a quiet first move (not a check) often the hardest to find in mate-in-2 puzzles?"
+- "Your Move 1 creates a threat — but Black has a way to block it. Is your first move correct?"
+- "How many moves ahead do you need to calculate to solve a mate in 2?"
+
+### Watch For (Common Mistakes)
+- Playing a check as Move 1 even when it's not the right one — not every check leads to mate.
+- Finding a forcing move but not verifying all Black responses — the mate might not work after all.
+- Giving up too quickly — mate-in-2 requires patience and methodical checking.
+
+### Timeline & Homework
+- 5 min – Warm-up: 3 mate-in-1 puzzles (instant reflex practice)
+- 10 min – Process explanation: how to approach mate-in-2
+- 15 min – 4 mate-in-2 puzzles with full response checking
+- 10 min – Create-your-own mate-in-2 and swap with partner
+- 10 min – Mini game: try to force a mate-in-2 situation in a real game
+- **Homework:** Find 10 "Mate in 2" puzzles on Lichess. For each one, write down your Move 1 AND why it works against every possible opponent response.`,
+
+    15: `### Objective & Outcomes
+- Learn **Destroying the Defender** (capturing the piece that protects a key square or piece) and **Distracting the Defender** (forcing it away from its defensive duty).
+- Students can: identify an overloaded or key defender, choose between destroying and distracting, win material or deliver checkmate using these techniques.
+- These are advanced tactical themes that underpin many combinations at Foundation level and above.
+
+### How to Explain It
+- **Destroying the Defender:** Simply CAPTURE the defending piece — the protected square or piece is now vulnerable.
+- **Distracting the Defender:** Force the defending piece to move AWAY from its post (with a threat it must answer) — then exploit what it was protecting.
+- Both achieve the same goal: remove the protection from a key piece or square.
+
+### Story
+The White Knight was being guarded by a Black Bishop. Nothing could happen to the Knight as long as the Bishop stood watch. So the White Queen made a decision: she would **destroy** the guard. With a swift capture, the Bishop was gone — and the Knight fell next move, defenceless. In another position, the guard was too strong to take. So the White Rook gave check on the far side of the board. "You MUST deal with me!" the Rook declared. The Black Bishop had to abandon the Knight and block the check. The moment the Bishop moved, the Knight was captured. Two different methods — destroy or distract — but the same result: the guard was gone and the target was won.
+
+### Teaching Steps
+1. Show a position where a key defender can be captured — "destroy" the guard, take the target.
+2. Show a position where a guard is too valuable to take — distract it with a check or threat.
+3. Show an "overloaded defender" position — one piece defending TWO things at once — distract it to win one.
+4. Puzzle drill: 4 positions — students must choose: destroy or distract? Then find the move.
+5. Game application: students try to identify the key defender before making tactical moves.
+
+### Questions to Ask Students
+- "This Bishop is protecting both the Rook and the back rank — what is that called? How do you exploit it?"
+- "The key defender is worth more than the attacker — do you destroy it anyway? Why or why not?"
+- "You want to take this Rook but it's defended by a Bishop. You could give a check that forces the Bishop to move — is that destroy or distract?"
+- "How do you identify the KEY defender in a position? What role does it play?"
+- "After you destroy or distract a defender, what EXACTLY do you capture?"
+
+### Watch For (Common Mistakes)
+- Destroying the defender with a losing trade — check the value before capturing.
+- Not seeing the overloaded defender — when one piece defends two targets, it's always worth noting.
+- Playing the distraction but the defender doesn't HAVE to respond — make sure the distracting threat is forcing.
+
+### Timeline & Homework
+- 5 min – Warm-up: back-rank mate threat (from Session 13)
+- 10 min – Destroying the defender: 3 positions
+- 10 min – Distracting the defender: 3 positions
+- 8 min – Overloaded defender: 2 positions
+- 10 min – Mixed: destroy or distract? (4 positions, students choose and solve)
+- 10 min – Game with "identify the key defender" habit
+- **Homework:** Find 8 "Remove the Defender" puzzles on Lichess. For each one, label whether the solution destroys or distracts the defender.`,
+
+    16: `### Objective & Outcomes
+- Formal Test 2: assess Mate-in-1 mix, Opening Traps, Defence against Mate, Back-Rank Mate, Mate-in-2, and Destroying/Distracting the Defender.
+- Coach identifies each student's progress and areas for final stretch of Foundation 1.
+- Students consolidate the sessions-9-15 material before the advanced topics of sessions 17-23.
+
+### How to Explain It
+- "We are now past the halfway mark in Foundation 1 — you know powerful tactics and important patterns. Today we see how deeply they have been absorbed."
+- Encourage: mistakes are not failures, they are tomorrow's practice material.
+
+### Story
+Before the great tournament, senior student Leo reviewed his preparation. "Pins, skewers, forks, discovered checks — those feel solid," he thought. "But back-rank mate? I need to make sure I'm scanning the back rank EVERY time." He remembered the session where he'd missed a back-rank threat in a game and lost. That miss had stayed with him — and he'd done 20 extra back-rank puzzles since. In the test, the very first position showed a back-rank mate in 2. Leo smiled — he saw it instantly. "That miss," he thought, writing down his answer, "was the most useful mistake I ever made."
+
+### Teaching Steps
+1. Calm opening: one puzzle from each of the last 7 sessions (quick warm-up, not a pre-test).
+2. Test: 6 positions — each targeting a specific skill from sessions 9-15.
+3. Independent work — no coaching during the test.
+4. After: students annotate their own answers ("confident / unsure / wrong — why?").
+5. Coach gives personalised 1-minute feedback to each student.
+
+### Questions to Ask Students (post-test)
+- "Which position did you feel most confident about? Walk me through your thought process."
+- "Which position stumped you? What did you try?"
+- "In the 'defend against mate' position — did you check for the threat BEFORE making a move?"
+- "In the mate-in-2 — did you check all opponent responses to your first move?"
+- "What is the one tactic you want to practise the most in the remaining sessions?"
+
+### Watch For (Common Mistakes)
+- Students who rush test positions — enforce: "name the tactic, then find the move."
+- Test anxiety masking actual skill — students who struggled verbally often perform better in writing.
+
+### Timeline & Homework
+- 5 min – Warm-up: one puzzle per skill from sessions 9-15
+- 25 min – Test (6 positions)
+- 10 min – Self-annotation and partner discussion
+- 5 min – Coach feedback and personalised goals for sessions 17-23
+- **Homework:** Based on today's test, identify your weakest tactic and solve 15 puzzles of that type on Lichess before next session.`,
+
+    17: `### Objective & Outcomes
+- Learn **Checkmate with one Rook and King** against a lone King — the most practical endgame to master.
+- Students can: force Rook+King checkmate in under 30 moves, avoid stalemate, know the optimal "box-shrinking" technique.
+- This is a harder endgame than Q+K; mastery here shows genuine endgame understanding.
+
+### How to Explain It
+- **Box technique:** Use the Rook to cut off files/ranks, creating a shrinking "box" around the enemy King.
+- The enemy King must be driven to an edge, then a corner.
+- **King cooperation is essential** — the King must "escort" the enemy King to the edge.
+- Key danger: offering stalemate when the enemy King has no move but is not in check.
+
+### Story
+The old Rook general had only one ally left — the White King — against the lone Black King. "Together," said the Rook, "we will herd him to the edge." The Rook stretched across the board: "I cut off all ranks below 6. He cannot come south." The White King marched north, pushing the Black King back. "Now below rank 7!" Another King march. "Now the edge!" The Black King was cornered on rank 8, the White King one step behind him, blocking escape. The Rook swung to the a-file — CHECK. The Black King had one square. White King stepped closer — blocking another. The Rook moved to h8 — **Checkmate**. One Rook, one King, perfect teamwork, and the enemy King had nowhere to go.
+
+### Teaching Steps
+1. Explain the box technique with a diagram — show how the "box" shrinks after each King march.
+2. Demo the full checkmate from a starting position (Rook on a4, White King on e1, Black King on e8).
+3. Students practice — coach watches for stalemate traps.
+4. Introduce the "opposition" concept: when Kings face each other with one square between them.
+5. Timed race: who can force Rook+King checkmate in fewer moves?
+
+### Questions to Ask Students
+- "What does 'cutting off' mean with the Rook? What does it prevent the enemy King from doing?"
+- "The enemy King is on d6 — where should your King walk to help corner it?"
+- "Your Rook just pushed the Black King to the back rank — what is your NEXT step before delivering check?"
+- "The Black King has only one square to move to after your check — is it checkmate or might it be stalemate?"
+- "At what point in the Rook+King checkmate do you not need the Rook to give check immediately?"
+
+### Watch For (Common Mistakes)
+- Stalemate — the #1 error in Rook+King endings; monitor closely.
+- Moving the Rook to give meaningless checks that push the Black King back to the centre.
+- Not activating the White King — students try to do everything with the Rook alone.
+
+### Timeline & Homework
+- 5 min – Warm-up: Q+K vs K (quick revision from Beginner level)
+- 8 min – Box technique explanation with diagrams
+- 20 min – Rook+King practice (students practice, coach monitors)
+- 10 min – Stalemate trap challenge: coach creates traps, students avoid them
+- 7 min – Timed race: fastest checkmate wins
+- **Homework:** Practice Rook+King vs King on Lichess endgame trainer until you achieve 5 wins in a row with no stalemates.`,
+
+    18: `### Objective & Outcomes
+- Learn Queen endgame technique: **Queen vs Bishop** and **Queen vs Knight** — how the Queen wins material or mates.
+- Students can: trap a lone Knight with the Queen, corner the Bishop, recognise drawn and winning positions.
+- Develops endgame precision and the understanding of how the Queen overwhelms minor pieces.
+
+### How to Explain It
+- **Queen vs Knight:** The Knight struggles in open positions — the Queen can chase it to the edge where it has fewer squares. Centralised Knight with no Pawns can often draw; edge Knight loses.
+- **Queen vs Bishop:** Bishop on a long diagonal can be tricky but the Queen can win the Bishop with the King's help using a fork or forcing the Bishop to a bad square.
+- Key insight: even small advantages require technique to convert in these endings.
+
+### Story
+The Queen faced the lone Knight across an empty board. "You can't catch me," taunted the Knight, hopping around. "Every time you get close, I jump somewhere unexpected!" The Queen smiled patiently. "I don't need to chase you," she said. "I just need to shrink your world." Step by step, the Queen cut off more and more squares. The Knight leapt to the edge — just 4 squares available from there. Then to the corner — just 2. The Queen closed in, the King arrived, and the Knight was trapped with no safe square to land on. "You can hop in any direction," said the Queen, "but you cannot hop to a square that doesn't exist anymore."
+
+### Teaching Steps
+1. Show Q vs Knight: the Queen chasing the Knight to the edge using forks.
+2. Show the "fork trick" — Queen threatens to fork King and Knight repeatedly.
+3. Show Q vs Bishop: how the Queen wins the Bishop with the King's help.
+4. Show a drawn Q vs Knight position (centralised Knight, no Pawns on board) — theory.
+5. Practice: students try to win Q vs Knight from three different starting positions.
+
+### Questions to Ask Students
+- "The Knight is on d4 — is it in a strong or weak position? What do you do to make it weaker?"
+- "Your Queen threatens a fork on the Knight — but the Knight jumps away. How do you cut off its next square?"
+- "The Bishop is on a long diagonal — how do you win it without letting it escape?"
+- "What is the danger of chasing the Knight to the CORNER instead of a good edging square?"
+- "In Q vs N, does your King need to help? At what point does it get involved?"
+
+### Watch For (Common Mistakes)
+- Chasing the Knight without a plan — random checks don't win; systematic squeezing does.
+- Forgetting the King must help — the Queen alone often cannot finish the job efficiently.
+- Stalemate in Q vs B (rare but possible in specific positions with Bishops on same-coloured corners).
+
+### Timeline & Homework
+- 5 min – Warm-up: Rook+King checkmate refresher (move 1 from a standard position)
+- 12 min – Queen vs Knight: chase, fork, and corner technique
+- 12 min – Queen vs Bishop: King+Queen coordination
+- 10 min – Practice games (Q vs N and Q vs B from various positions)
+- 6 min – Drawn position recognition: when does Q vs N draw?
+- **Homework:** Play Q vs Knight against a friend or computer. Try from 5 starting positions. How many can you win?`,
+
+    19: `### Objective & Outcomes
+- **Mixed Tactics** session: practice pins, skewers, forks, discovered checks, back-rank mates, and destroying/distracting defenders in mixed positions.
+- Students can: identify the correct tactic type in a random position without being told what to look for.
+- Builds the pattern recognition that makes tactics automatic in real games.
+
+### How to Explain It
+- "In a real game, nobody tells you 'this is a fork position' — you have to SEE it yourself."
+- **Tactical scanning order (remember SSCF):** Skewers, Skewers → Checks → Captures → Forks (any order that works for you, but be systematic).
+- Before every move, ask: "Can I win material right now? Is there a mate threat?"
+
+### Story
+Master tactician Vikram had a simple rule: "Every position screams at you. You just have to learn to hear it." When he looked at a board, he didn't search randomly — he ran his scan. "Check first: any checks available? Now captures: anything hanging or undefended? Now patterns: any pieces lined up for a pin or skewer? Any Knight that wants to fork? Any King on the back rank without air?" Position by position, the tactics jumped out — not because he was a genius, but because he had a system. His student watched in awe. "I want to see like that," she said. "Then practise until the scan takes one second, not one minute," said Vikram. "Anyone can learn to see. You just have to look."
+
+### Teaching Steps
+1. Teach (or review) a tactical scanning system: students pick their own order and commit to it.
+2. Quick warm-up: 1 puzzle of each type (6 types, 30 seconds each — just identify the tactic, don't solve).
+3. Mixed drill round 1: 6 positions, no hints — students identify AND solve.
+4. Mixed drill round 2: 6 harder positions — students must name the tactic before moving.
+5. Students set up 2 positions for each other — both try to fool the other with tricky but valid tactics.
+
+### Questions to Ask Students
+- "What is your tactical scanning process? Walk me through it out loud."
+- "You've identified a possible pin AND a possible fork — which do you play and why?"
+- "This position has a back-rank mate threat AND a way to win a piece. Which is more urgent?"
+- "Sometimes the tactic is a quiet first move — how do you find those when you're scanning?"
+- "What is the most common tactic type you MISS in your own games? How will you fix that?"
+
+### Watch For (Common Mistakes)
+- Students solving the FIRST tactic they see without checking if a better one exists.
+- Naming the wrong tactic type — if they say "pin" but it's a skewer, clarify immediately.
+- Rushing — accuracy beats speed at this stage; build the habit of the full scan first.
+
+### Timeline & Homework
+- 5 min – Tactical scanning system introduction (students choose their order)
+- 8 min – Warm-up: identify only (no solving), 1 of each tactic type
+- 15 min – Mixed drill round 1 (6 positions, identify and solve)
+- 12 min – Mixed drill round 2 (6 harder positions)
+- 10 min – Student-created positions and discussion
+- **Homework:** Set a timer for 2 minutes. Open a random Lichess puzzle. Run your scan. Record which tactic it was. Repeat 10 times. Track which you got right and wrong.`,
+
+    20: `### Objective & Outcomes
+- Learn to identify and create **checkmate threats** — moves that threaten checkmate next move even without delivering it immediately.
+- Students can: create a checkmate threat, force the opponent to deal with it, and use the tempo gained to build a larger attack.
+- Checkmate threats are the foundation of attacking chess — they combine tactics with strategy.
+
+### How to Explain It
+- A **checkmate threat** = a move that threatens to deliver checkmate on the NEXT move.
+- The opponent MUST respond to a checkmate threat — giving you control of the game tempo.
+- **Double threats:** threaten mate AND another tactic simultaneously — the opponent cannot stop both.
+
+### Story
+General White had learned patience. Instead of always trying to checkmate immediately, she started placing her pieces to THREATEN checkmate — forcing the enemy to always react. "I threaten mate on h7," she thought, "so the enemy Bishop has to come back to defend." While the Bishop retreated, she brought another piece forward. "Now I threaten back-rank mate," she mused. The enemy Rook had to defend the back rank. "And NOW," said General White, moving her Queen to the perfect square, "I threaten TWO mates at once — and they can only stop one." The power of the checkmate threat was not in the checkmate itself — it was in the precious tempo it bought for the attacker.
+
+### Teaching Steps
+1. Set up a position and play a move that threatens mate on the next move — point out how it forces a response.
+2. Show how the opponent's forced defensive move can be used to launch the next threat.
+3. Show a double checkmate threat — two mates at once, only one can be stopped.
+4. Puzzle drill: 4 positions where the task is "find the move that THREATENS mate" (not delivers it).
+5. Game: students try to build up checkmate threats rather than immediate checkmates.
+
+### Questions to Ask Students
+- "What is the difference between a checkmate threat and actual checkmate?"
+- "You threaten mate on h7 — your opponent defends with g6. What did you gain from that exchange?"
+- "How do you create a DOUBLE checkmate threat that your opponent cannot fully answer?"
+- "Your opponent has just stopped your mate threat. Is their move a good one? What can you do next?"
+- "When is a checkmate threat MORE powerful than immediate checkmate?"
+
+### Watch For (Common Mistakes)
+- Playing the checkmate threat but not noticing the opponent's response completely stops it — think ahead.
+- Missing the double threat opportunity — always ask "can I threaten TWO things with ONE move?"
+- Losing a piece while threatening checkmate — the threat must come at no cost or be worth the cost.
+
+### Timeline & Homework
+- 5 min – Warm-up: mixed tactics scan (from Session 19)
+- 10 min – Checkmate threat basics: 3 examples
+- 12 min – Double checkmate threats: 3 examples
+- 12 min – Puzzle drill: find the threatening move (4 positions)
+- 10 min – Game with "threat before checkmate" focus
+- **Homework:** In your next 3 games, count how many checkmate threats you created. Did your opponent always see and stop them?`,
+
+    21: `### Objective & Outcomes
+- Learn **Passed Pawns** and advanced **Pawn Promotion** concepts: what makes a pawn "passed," how to support it, and how to stop opponent's passed pawns.
+- Students can: identify a passed pawn, choose the right piece to block a passed pawn, calculate whether a pawn will queen in time.
+- Pawn play is one of the most important endgame skills — passed pawns win many games between equal opponents.
+
+### How to Explain It
+- **Passed Pawn:** A pawn with no enemy pawns in front of it or on adjacent files — nothing can stop it from promoting!
+- **"Passed pawns must be pushed!"** (Nimzowitsch) — a passed pawn is only powerful when it advances.
+- The **Rule of the Square:** Whether the King can catch a passed pawn in time — draw a diagonal from the pawn to the promotion square; if the enemy King is inside the square, it catches the pawn.
+
+### Story
+Little Pawn had marched all the way to d5, then d6 — and suddenly realised he had no enemy Pawns blocking his path to d8. He was a **passed pawn** — free to run! The enemy King sprinted across the board to catch him. But was it fast enough? The White King quickly calculated: the pawn was on d5, promotion was at d8 — three steps. The Black King was on g7 — could it reach d8 in three moves? Nope. The Pawn was already too far ahead. It marched on — d6, d7, d8 — **Queen!** The enemy King arrived on d6 just too late. "A passed pawn," said the old White King proudly, "is a soldier with a dream. And that dream can change the outcome of the entire war."
+
+### Teaching Steps
+1. Define passed pawn with 3 examples on the board — students identify which pawns are "passed."
+2. Explain why passed pawns are powerful (they will promote if not stopped).
+3. Teach the Rule of the Square — draw the box with students.
+4. Show how to SUPPORT a passed pawn with the King vs how to BLOCK it with the King.
+5. Endgame puzzle: two Pawns racing to promote — which one wins and why?
+
+### Questions to Ask Students
+- "Which of these four pawns is 'passed'? How can you tell?"
+- "Using the Rule of the Square — does the Black King catch this pawn on d5 in time?"
+- "What is better for the attacking side: using the King to escort the pawn or racing ahead to promote?"
+- "Your opponent has a passed pawn on e4 — how do you stop it? Where should your King go?"
+- "Two passed pawns, one for each side, racing to promote — how do you calculate who queens first?"
+
+### Watch For (Common Mistakes)
+- Not noticing a passed pawn is passed — students focus on tactics and miss the endgame structure.
+- Using the wrong rule for whether the King catches the pawn — the Rule of the Square needs careful drawing.
+- Advancing the passed pawn too early without King support (sometimes the King must escort).
+
+### Timeline & Homework
+- 5 min – Warm-up: identify passed pawns in 5 positions
+- 10 min – Passed pawn power and Rule of the Square
+- 12 min – Pawn race endgame puzzles (3 positions)
+- 12 min – Stop the pawn vs support the pawn positions
+- 6 min – Game with focus on pawn structure and passed pawn creation
+- 5 min – "Passed pawns must be pushed" — what does this mean in practice?
+- **Homework:** In your next 3 games, identify if either side had a passed pawn. Who won the game? Was the passed pawn the deciding factor?`,
+
+    22: `### Objective & Outcomes
+- Learn **Trapping Pieces**: using your pieces to restrict and trap an enemy piece until it has no escape.
+- Students can: identify when a piece is vulnerable to being trapped, execute a trapping manoeuvre, avoid having their own pieces trapped.
+- Trapping pieces is the "quiet" side of tactics — no flashy captures, just methodical encirclement.
+
+### How to Explain It
+- **Trapping** = cutting off every escape square of an enemy piece until it cannot move without being captured for free.
+- Most commonly traps: the Bishop in the corner (e.g., trapped Bishop on h7 after g6-h7), the Knight on the rim (no safe squares), or a Queen that has wandered into enemy territory.
+- Key: trap a piece with pieces of LOWER value — trapping a Bishop (3 pts) with a Pawn (1 pt) wins material.
+
+### Story
+The Black Bishop had ventured boldly to h3 — "I control this square!" it boasted. But White's Knight went to f4, and a Pawn advanced to g3. The Bishop looked left — Pawn. It looked right — Knight. It looked forward — Pawn. It looked behind — the edge of the board. "No," whispered the Bishop, horror dawning. "I'm... trapped." There were no safe squares to move to. The White Pawn leisurely stepped to g4, and the Bishop was captured next move — a powerful piece defeated by a humble Pawn setting a quiet trap. "Never let your pieces wander to the edge," said the Bishop's teacher afterwards. "Pieces need room to breathe. A piece with no escape route is worth nothing."
+
+### Teaching Steps
+1. Show the classic trapped Bishop position — demonstrate the encirclement.
+2. Show a trapped Knight on the rim — why the rim has fewer escape squares.
+3. Show a trapped Queen — advanced students love this (Queen trapped in enemy territory).
+4. Preventative thinking: set up potential traps — ask "which of my pieces could be trapped?"
+5. Puzzle drill: 4 "trap the piece" puzzles and 2 "rescue your piece" puzzles.
+
+### Questions to Ask Students
+- "The enemy Bishop is on h3 — how many safe squares does it have? How do you trap it?"
+- "Your Knight is on a3 with no squares to jump to safely — how do you get it out?"
+- "Why is the RIM dangerous for a Knight? How many squares does it have from a1? From h4?"
+- "Can you deliberately LURE a piece into a position where it becomes trapped?"
+- "What is the minimum number of moves needed to trap this Bishop? Walk me through it."
+
+### Watch For (Common Mistakes)
+- Taking too many moves to set the trap — each move must cut off an escape; no wasted moves.
+- Students moving their own pieces to the rim where they become vulnerable to trapping.
+- Failing to recognise that the trapped piece can sacrifice itself to escape the trap.
+
+### Timeline & Homework
+- 5 min – Warm-up: passed pawn identification from Session 21
+- 10 min – Trapping technique: Bishop and Knight traps (with demonstration)
+- 12 min – Trap the piece puzzles (4 positions)
+- 10 min – Rescue your piece (2 positions — escape the trap)
+- 10 min – "Could this be trapped?" board scanning game
+- 8 min – Partner game: try to trap each other's pieces
+- **Homework:** Find 10 "Trapped Piece" puzzles on Lichess. For each, identify which piece is trapped and how it got into that position.`,
+
+    23: `### Objective & Outcomes
+- Learn **Sacrificing pieces to deliver checkmate**: giving up material to force a mating combination.
+- Students can: recognise a sacrificial mating attack, calculate that the sacrifice leads to forced checkmate, distinguish a sacrifice from a blunder.
+- The most exciting and dramatic tactical idea — sacrifices appear in nearly every famous chess game.
+
+### How to Explain It
+- A **sacrifice** = giving up material intentionally to gain a greater benefit — usually checkmate or a decisive positional advantage.
+- **How to know it's correct:** After the sacrifice, every opponent response leads to checkmate — it is FORCED.
+- The sacrifice creates **irreversible weaknesses** around the King — open files, stripped pawns, exposed King.
+
+### Story
+The chess world held its breath as Grandmaster Geller moved his Bishop to h7. "SACRIFICE!" whispered the crowd. Black had to take — Kxh7. Now the White Knight crashed into g5+, King forced to g6. Queen to d3, forced to f5. Another piece joined, then another — with each move, the Black King was dragged further from safety, exposed on the open board. Ten moves after the sacrifice, it was Checkmate. "But how did you KNOW it would work?" asked his opponent afterwards. "I calculated every response," said the Grandmaster. "There were exactly four possible moves. I checked all four and saw checkmate at the end of every line." Sacrifice without calculation is a blunder. Sacrifice WITH calculation is an art.
+
+### Teaching Steps
+1. Show a simple Bishop sacrifice on h7 (or h2 for Black) — the classic attacking sacrifice.
+2. Walk through the forced continuation — show ALL opponent responses and demonstrate mate in each.
+3. Show a Rook sacrifice to open a file for the Queen.
+4. Show the difference: this sacrifice leads to mate vs this "sacrifice" that just loses a piece.
+5. Puzzle drill: 3 sacrificial mate positions — students must find the sacrifice AND the follow-up.
+
+### Questions to Ask Students
+- "White sacrifices the Bishop on h7 — why does Black HAVE to take it? What if Black doesn't?"
+- "After the sacrifice, Black has 3 possible responses. Walk me through why each one leads to checkmate."
+- "How do you know the difference between a sacrifice and a blunder?"
+- "What is opened up or created by this sacrifice? (file? diagonal? weakness?)"
+- "Could you have delivered checkmate WITHOUT the sacrifice? Why was the sacrifice the better path?"
+
+### Watch For (Common Mistakes)
+- Students playing "sacrifices" that just lose material without compensation — require them to calculate first.
+- Not calculating ALL opponent responses — missing one spoils the whole combination.
+- Being scared to sacrifice — confidence in calculation is the key; the sacrifice is only scary until you see it's forced.
+
+### Timeline & Homework
+- 5 min – Warm-up: checkmate threat identification from Session 20
+- 10 min – Classic h7 sacrifice demonstration with full calculation
+- 12 min – Rook sacrifice and follow-up
+- 12 min – Sacrifice puzzles: find the sacrifice and the forced continuation
+- 8 min – "Sacrifice or blunder?" — 4 positions, students decide
+- 8 min – Game: try to build a sacrificial attack
+- **Homework:** Watch one sacrificial combination from a famous game (Grandmaster Game of the Week on YouTube or Chess.com TV). Write down: what was sacrificed, what was gained, and was it forced?`,
+
+    24: `### Objective & Outcomes
+- Final Test 3: assess the complete Foundation 1 curriculum.
+- Students receive a personalised certificate of completion and feedback summary.
+- Coach previews Foundation 2 — new topics await: overloading, X-ray attacks, windmill, and named checkmate patterns.
+
+### How to Explain It
+- "Today is your Foundation 1 graduation — everything from pins and skewers to sacrificial mates."
+- "By finishing Foundation 1, you have moved from a chess player who knows the rules to a chess player who knows TACTICS. That is a significant transformation."
+
+### Story
+The young tacticians stood at the gates of the Second Academy — Foundation 2. Behind them lay the familiar ground of Foundation 1: the pins that froze pieces, the forks that attacked two at once, the discoveries that revealed hidden attackers, the sacrifices that broke open fortresses. Ahead lay new mysteries: **Overloading, X-Ray Attacks, the Windmill, and the legendary named checkmate patterns** of history's greatest games. "Are we ready?" asked one student nervously. Another student — who'd struggled with Knight forks in session 6 but now solved them instantly — smiled. "When we started Foundation 1, we didn't know what a pin was. Now we can sacrifice a Bishop to deliver checkmate in 6 moves. We're more than ready." The gates swung open. The journey continued.
+
+### Teaching Steps
+1. Grand review warm-up: one puzzle per major tactic (10 puzzles, 30 seconds each — student names the tactic AND solves it).
+2. Final Test: 8 positions covering all major Foundation 1 themes.
+3. After test: coach shares personalised strengths and development areas for each student.
+4. Foundation 2 preview: show 3 topics from Foundation 2 as exciting glimpses of what's coming.
+5. Celebration: certificates, personal bests, reflection on growth since Beginner.
+
+### Questions to Ask Students (post-test)
+- "What is the tactic you are most proud of mastering in Foundation 1?"
+- "Which session was your breakthrough moment — where something suddenly clicked?"
+- "What do you think Foundation 2 will be about? What would you like to learn?"
+- "If you met a Beginner student, what is the most important tactic tip you'd give them?"
+- "How has your thinking changed from when you started Foundation 1 to now?"
+
+### Watch For (Common Mistakes)
+- Students underestimating how much they've learned — help them compare themselves to their Beginner self.
+- Overconfidence about what's ahead — Foundation 2 will introduce brand new challenges.
+
+### Timeline & Homework
+- 5 min – Grand warm-up: 10 tactics puzzles, 30 seconds each (the "greatest hits" of Foundation 1)
+- 25 min – Final Test (8 positions)
+- 10 min – Personalised feedback and certificates
+- 5 min – Foundation 2 preview: overloading, X-ray, windmill, and named checkmates
+- **Homework:** Play 5 games this week using EVERY tactic you learned in Foundation 1. After each game, write down: which tactic did you use? Which did you miss? Bring your notes to the first Foundation 2 session.`,
+  },
 }
