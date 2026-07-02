@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
 import { cn } from '@/lib/utils'
-import { SYLLABUS, syllabusLevelFromCC } from '@/lib/syllabus'
+import { SYLLABUS, syllabusLevelFromCC, type SyllabusLevel } from '@/lib/syllabus'
 import { fetchAllStudentProgress, deduplicateStudents, detectLevel } from '@/lib/cc-explorer'
 import CoachingGuideDrawer from '@/components/syllabus/CoachingGuideDrawer'
 import SyllabusFilter from '@/components/syllabus/SyllabusFilter'
@@ -9,15 +9,17 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = { title: 'Syllabus & Progress — Admin' }
 export const dynamic = 'force-dynamic'
 
-const LEVEL_ORDER = [
+const LEVEL_ORDER: SyllabusLevel[] = [
   'Beginner', 'Foundation 1', 'Foundation 2', 'Foundation 3', 'Foundation 4',
   'Intermediate 1', 'Intermediate 2', 'Intermediate 3', 'Intermediate 4',
-] as const
+]
 
 // Always show these levels even with 0 students (curriculum reference)
-const ALWAYS_SHOW = new Set(['Beginner', 'Foundation 1', 'Foundation 2', 'Foundation 3', 'Foundation 4'])
+const ALWAYS_SHOW = new Set<SyllabusLevel>([
+  'Beginner', 'Foundation 1', 'Foundation 2', 'Foundation 3', 'Foundation 4',
+])
 
-const LEVEL_COLORS: Record<string, { badge: string; bar: string; test: string }> = {
+const LEVEL_COLORS: Record<SyllabusLevel, { badge: string; bar: string; test: string }> = {
   'Beginner':      { badge: 'bg-emerald-100 text-emerald-700', bar: 'bg-emerald-500', test: 'bg-emerald-300' },
   'Foundation 1':  { badge: 'bg-sky-100 text-sky-700',         bar: 'bg-sky-500',     test: 'bg-sky-300' },
   'Foundation 2':  { badge: 'bg-blue-100 text-blue-700',       bar: 'bg-blue-500',    test: 'bg-blue-300' },
@@ -29,12 +31,16 @@ const LEVEL_COLORS: Record<string, { badge: string; bar: string; test: string }>
   'Intermediate 4':{ badge: 'bg-red-100 text-red-700',         bar: 'bg-red-500',     test: 'bg-red-300' },
 }
 
+// Next.js 15+ passes searchParams as a Promise
 export default async function SyllabusPage({
   searchParams,
 }: {
-  searchParams?: { level?: string }
+  searchParams: Promise<{ level?: string }>
 }) {
-  const selectedLevel = searchParams?.level ?? ''
+  // Await searchParams — required in Next.js 15/16
+  const params = await searchParams
+  const selectedLevel = params?.level ?? ''
+
   const rawStudents = await fetchAllStudentProgress().catch(() => [])
   const students = deduplicateStudents(rawStudents)
 
@@ -49,7 +55,7 @@ export default async function SyllabusPage({
   }
 
   // Filter levels based on dropdown selection
-  const visibleLevels = selectedLevel
+  const visibleLevels: SyllabusLevel[] = selectedLevel
     ? LEVEL_ORDER.filter(l => l === selectedLevel)
     : LEVEL_ORDER
 
@@ -61,7 +67,7 @@ export default async function SyllabusPage({
           <p className="text-sm text-gray-500 mt-0.5">Full curriculum with session-level progress per student</p>
         </div>
         <Suspense fallback={null}>
-          <SyllabusFilter />
+          <SyllabusFilter selected={selectedLevel} />
         </Suspense>
       </div>
 
@@ -69,6 +75,8 @@ export default async function SyllabusPage({
         const sessions = SYLLABUS[level]
         const levelStudents = byLevel[level] ?? []
         const colors = LEVEL_COLORS[level]
+
+        // Skip levels with no students unless they are always-shown
         if (!levelStudents.length && !ALWAYS_SHOW.has(level)) return null
 
         const avg = levelStudents.length
@@ -90,18 +98,18 @@ export default async function SyllabusPage({
               )}
             </div>
 
-            {/* Session grid legend */}
+            {/* Session list */}
             <div className="px-6 py-4 bg-gray-50 border-b border-gray-100">
               <div className="space-y-1.5">
                 {sessions.map(sess => (
-                  <div key={sess.session} className="flex items-center gap-2 group">
+                  <div key={sess.session} className="flex items-center gap-2">
                     <div className={cn(
                       'w-5 h-5 rounded flex items-center justify-center text-[9px] font-bold shrink-0 text-white',
                       sess.isTest ? colors.test : colors.bar
                     )}>
                       {sess.isTest ? '★' : sess.session}
                     </div>
-                    <span className="text-[11px] text-gray-600 flex-1">{sess.topic}</span>
+                    <span className="text-[11px] text-gray-600 flex-1 min-w-0">{sess.topic}</span>
                     <CoachingGuideDrawer
                       level={level}
                       session={sess.session}
@@ -124,8 +132,6 @@ export default async function SyllabusPage({
                       <p className="text-sm font-medium text-gray-900 truncate">{s.student_name}</p>
                       <p className="text-xs text-gray-400">{completed}/24 · {pct}%</p>
                     </div>
-
-                    {/* Progress bar mini */}
                     <div className="flex-1 flex items-center gap-0.5">
                       {sessions.map(sess => {
                         const done = sess.session <= completed
@@ -146,7 +152,6 @@ export default async function SyllabusPage({
                         )
                       })}
                     </div>
-
                     <div className="w-16 text-right shrink-0">
                       <span className="text-xs font-semibold text-gray-500">{s.rating ?? '—'}</span>
                     </div>
